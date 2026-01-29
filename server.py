@@ -127,12 +127,21 @@ async def get_current(user: dict = Depends(get_current_user)):
         "full_name": user.get("full_name"),
         "email": user.get("email"),
     }
-
+@app.post("/num_cam_update")
+async def update(number_cam: int):
+    global NUM_CAMERAS
+    NUM_CAMERAS = number_cam
+    if (number_cam == 0):
+        raise HTTPException(status_code=400, detail="number_cam can't be zero")
+    
+    return {"status": "success"}
 @app.get("/num_cam")
 async def get_num_cam(user: dict = Depends(get_current_user)):
     """
+    
     Protected: Returns {"num": <int>}
     """
+    print(user)
     return {"num": NUM_CAMERAS}
 
 @app.get("/cam{cam_id}")
