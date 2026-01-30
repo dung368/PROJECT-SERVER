@@ -1,0 +1,20 @@
+{
+  "nai": {
+    "user_id": "d9565d44-131f-4518-a00e-8c4558197b07",
+    "username": "nai",
+    "full_name": null,
+    "email": null,
+    "hashed_password": "$2b$12$wG7hmPSoZv9lJDehrjS.Ku8/yaS7gJjtDdxumzJLNZ1YlVV9nY0C2",
+    "disabled": false,
+    "num_cams": 2
+  },
+  "nainai": {
+    "user_id": "30096475-e9c3-41a6-8d9f-0cecbe708c63",
+    "username": "nainai",
+    "full_name": null,
+    "email": null,
+    "hashed_password": "$2b$12$SVFCgRFoZjFdwI9fCBTCMORocLKB1ACR6iObP01gBMofzyFCv5QfC",
+    "disabled": false,
+    "num_cams": 4
+  }
+}
