@@ -253,16 +253,17 @@ async def cam_info(cam_id: int, user: dict = Depends(get_current_user)):
     Protected camera info for the authenticated user. Enforces per-user camera count.
     """
     user_num = user.get("num_cams", 1)
-    if cam_id < 1 or cam_id > user_num:
+    if cam_id >= user_num:
         raise HTTPException(status_code=404, detail="Camera not found for this user")
-    stream_url = f"/stream/{user['user_id']}/cam{cam_id}"
-    return {
-        "user_id": user["user_id"],
-        "cam_id": cam_id,
-        "name": f"{user.get('username')}-cam{cam_id}",
-        "stream_url": stream_url,
-        "description": f"Camera {cam_id} for user {user.get('username')}",
-    }
+    stream_url = f"https://53e8de49be53.ngrok-free.app/nai-cam0/"
+    return stream_url;
+    # return {
+    #     "user_id": user["user_id"],
+    #     "cam_id": cam_id,
+    #     "name": f"{user.get('username')}-cam{cam_id}",
+    #     "stream_url": stream_url,
+    #     "description": f"Camera {cam_id} for user {user.get('username')}",
+    # }
 
 
 # Optional: a simple health check
