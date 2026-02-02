@@ -15,6 +15,14 @@
     "email": null,
     "hashed_password": "$2b$12$SVFCgRFoZjFdwI9fCBTCMORocLKB1ACR6iObP01gBMofzyFCv5QfC",
     "disabled": false,
-    "num_cams": 4
+    "num_cams": 1,
+    "cameras": [
+      {
+        "camera_id": "2de2aae0-4b47-432a-8ec1-9a7edfba8447",
+        "name": "fuck",
+        "url": "https://5c3c535dd67e.ngrok-free.app/nai-cam0/index.m3u8",
+        "created_at": "2026-02-02T01:34:18.189648Z"
+      }
+    ]
   }
 }
