@@ -15,7 +15,7 @@
     "email": null,
     "hashed_password": "$2b$12$SVFCgRFoZjFdwI9fCBTCMORocLKB1ACR6iObP01gBMofzyFCv5QfC",
     "disabled": false,
-    "num_cams": 11,
+    "num_cams": 4,
     "cameras": [
       {
         "camera_id": "2de2aae0-4b47-432a-8ec1-9a7edfba8447",
@@ -36,52 +36,10 @@
         "created_at": "2026-02-04T13:53:55.240532Z"
       },
       {
-        "camera_id": "48377c33-b469-4d2f-bacc-ca4589229b22",
-        "name": "nai",
-        "url": "https://knolly-celebratory-fumiko.ngrok-free.dev/nai-cam0/index.m3u8",
-        "created_at": "2026-02-14T09:01:22.406610Z"
-      },
-      {
-        "camera_id": "eeb2c824-e4f9-4dcd-bf61-8ee14151f832",
-        "name": "nai",
-        "url": "https://knolly-celebratory-fumiko.ngrok-free.dev/nai-cam0/index.m3u8",
-        "created_at": "2026-02-14T09:03:53.042104Z"
-      },
-      {
-        "camera_id": "efe984e2-f273-4d5c-a9ab-e675e82bc7d0",
-        "name": "dun",
-        "url": "http://192.168.2.221:8888/nai-cam0/index.m3u8",
-        "created_at": "2026-02-14T09:06:24.326712Z"
-      },
-      {
-        "camera_id": "a64153c9-97e4-422a-9e9a-5e5d699907f6",
-        "name": "dun2",
-        "url": "http://192.168.2.221:8888/nai-cam0/index.m3u8",
-        "created_at": "2026-02-14T09:09:36.030695Z"
-      },
-      {
-        "camera_id": "caff5e33-9e34-4813-b790-3536f0932222",
-        "name": "cam9",
-        "url": "https://duncam2.loca.lt/nai-cam0/index.m3u8",
-        "created_at": "2026-02-14T09:15:10.694033Z"
-      },
-      {
-        "camera_id": "e9138504-4c18-4a72-92b3-a47bc58cbd5b",
-        "name": "ni",
-        "url": "http://192.168.2.221:8000/overlay?url=https://5b88-117-5-147-230.ngrok-free.app/nai-cam0/index.m3u8",
-        "created_at": "2026-02-14T10:56:22.564348Z"
-      },
-      {
         "camera_id": "03a3603e-385b-47e0-9023-2c9080936991",
         "name": "umi",
         "url": "http://192.168.2.221:8000/overlay?url=http://localhost:8888/nai-cam0/index.m3u8",
         "created_at": "2026-02-14T10:59:44.181251Z"
-      },
-      {
-        "camera_id": "66f5fba8-f91e-46db-84b1-7c2b8e01ef48",
-        "name": "umi2",
-        "url": "https://2593-117-5-147-230.ngrok-free.app/overlay?url=http://localhost:8888/nai-cam0/index.m3u8",
-        "created_at": "2026-02-14T11:01:05.812951Z"
       }
     ]
   },

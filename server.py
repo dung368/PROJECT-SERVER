@@ -12,8 +12,8 @@ from pydantic import BaseModel, HttpUrl, Field
 from passlib.context import CryptContext
 from jose import jwt, JWTError
 from fastapi.responses import StreamingResponse
-import cv2
 import utils.camera as camutil
+from fastapi import Response
 
 # ----- CONFIG -----
 SECRET_KEY = "replace-with-a-secure-random-secret"  # replace in prod
@@ -157,7 +157,50 @@ async def check_stream_url(username: str, url: int) -> bool:
     for i in cams:
         if (i['url'] == url): return 1
     return 0
+async def delete_camera_by_id(username: str, camera_id: str) -> bool:
+    """Delete camera by camera_id (UUID). Return True if deleted, False if not found."""
+    async with _db_lock:
+        db = await _read_db()
+        if username not in db:
+            raise KeyError("user not found")
+        cams = db[username].get("cameras", [])
+        new_cams = [c for c in cams if c.get("camera_id") != camera_id]
+        if len(new_cams) == len(cams):
+            return False
+        db[username]["cameras"] = new_cams
+        db[username]["num_cams"] = len(new_cams)
+        await _write_db(db)
+        return True
 
+
+async def delete_camera_by_index(username: str, index: int) -> bool:
+    """Delete camera by 0-based index. Return True if deleted, False if index invalid."""
+    async with _db_lock:
+        db = await _read_db()
+        if username not in db:
+            raise KeyError("user not found")
+        cams = db[username].get("cameras", [])
+        if index < 0 or index >= len(cams):
+            return False
+        cams.pop(index)
+        db[username]["num_cams"] = len(cams)
+        await _write_db(db)
+        return True
+
+
+async def update_camera(username: str, camera_id: str, fields: dict) -> Optional[dict]:
+    """Update camera fields (e.g. name, url). Returns updated cam or None if not found."""
+    async with _db_lock:
+        db = await _read_db()
+        if username not in db:
+            raise KeyError("user not found")
+        cams = db[username].get("cameras", [])
+        for cam in cams:
+            if cam.get("camera_id") == camera_id:
+                cam.update(fields)
+                await _write_db(db)
+                return cam
+        return None
 
 # ----- Pydantic MODELS -----
 class LoginRequest(BaseModel):
@@ -197,7 +240,9 @@ class UserOut(BaseModel):
     num_cams: int
     cameras: List[CameraOut] = []
 
-
+class CameraUpdate(BaseModel):
+    name: Optional[str] = None
+    url: Optional[str] = None
 
 # ----- APP + CORS -----
 app = FastAPI(title="Simple Auth + Camera API (JSON DB + Cameras)")
@@ -360,6 +405,21 @@ async def cam_info(url: str):
     # # return a simple JSON with the HLS URL (exact format user asked)
     # url = cam["url"]    
     return StreamingResponse(camutil.gen_img(url), media_type="multipart/x-mixed-replace; boundary=frame")
+
+@app.delete("/cameras/{camera_id}", status_code=204)
+async def remove_camera(camera_id: str, user: dict = Depends(get_current_user)):
+    ok = await delete_camera_by_id(user["username"], camera_id)
+    if not ok:
+        raise HTTPException(status_code=404, detail="Camera not found")
+    return Response(status_code=204)
+
+
+@app.delete("/cam/index/{index}", status_code=204)
+async def remove_camera_by_index(index: int, user: dict = Depends(get_current_user)):
+    ok = await delete_camera_by_index(user["username"], index)
+    if not ok:
+        raise HTTPException(status_code=404, detail="Camera not found (invalid index)")
+    return Response(status_code=204)
 
 # Optional: a simple health check
 @app.get("/")
