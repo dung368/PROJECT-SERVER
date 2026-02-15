@@ -148,6 +148,16 @@ async def get_camera_by_index(username: str, index: int) -> Optional[dict]:
         return None
     return cams[index]
 
+async def check_stream_url(username: str, url: int) -> bool:
+    user = await load_user(username)
+    if not user:
+        return None
+    cams = user.get("cameras", [])
+    print(cams)
+    for i in cams:
+        if (i['url'] == url): return 1
+    return 0
+
 
 # ----- Pydantic MODELS -----
 class LoginRequest(BaseModel):
@@ -339,24 +349,17 @@ async def cam_info(cam_id: int, user: dict = Depends(get_current_user)):
 @app.get("/overlay")
 async def cam_info(url: str):
     """
-    user: dict = Depends(get_current_user)
     Return camera metadata for the authenticated user by 0-based index (cam_id).
     Example: GET /cam/0 returns the first camera.
     """
+
     # cam = await get_camera_by_index(user["username"], cam_id)
-    # if not cam:
+    # kt = await check_stream_url(user["username"], url)
+    # if not kt:
     #     raise HTTPException(status_code=404, detail="Camera not found for this user")
     # # return a simple JSON with the HLS URL (exact format user asked)
     # url = cam["url"]    
     return StreamingResponse(camutil.gen_img(url), media_type="multipart/x-mixed-replace; boundary=frame")
-    # return {
-    #     "user_id": user["user_id"],
-    #     "cam_id": cam_id,
-    #     "camera_id": cam["camera_id"],
-    #     "name": cam["name"],
-    #     "stream_url": cam["url"],  # should be like https://.../nai-cam0/index.m3u8
-    #     "created_at": cam.get("created_at"),
-    # }
 
 # Optional: a simple health check
 @app.get("/")
