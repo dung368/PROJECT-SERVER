@@ -15,7 +15,7 @@
     "email": null,
     "hashed_password": "$2b$12$SVFCgRFoZjFdwI9fCBTCMORocLKB1ACR6iObP01gBMofzyFCv5QfC",
     "disabled": false,
-    "num_cams": 4,
+    "num_cams": 9,
     "cameras": [
       {
         "camera_id": "2de2aae0-4b47-432a-8ec1-9a7edfba8447",
@@ -40,6 +40,62 @@
         "name": "umi",
         "url": "http://192.168.2.221:8000/overlay?url=http://localhost:8888/nai-cam0/index.m3u8",
         "created_at": "2026-02-14T10:59:44.181251Z"
+      },
+      {
+        "camera_id": "24673e0e-ac33-464a-9960-3df2ccbc1250",
+        "name": "xd",
+        "url": "https://knolly-celebratory-fumiko.ngrok-free.dev/nai-cam0/index.m3u8",
+        "created_at": "2026-02-19T19:13:29.145285Z",
+        "is_driver": false,
+        "last_human_seen": null,
+        "missing_notified": false
+      },
+      {
+        "camera_id": "b894c724-9872-429c-b4c2-63d0819f6ac6",
+        "name": "cc",
+        "url": "https://light-hounds-appear.loca.lt/nai-cam0/index.m3u8",
+        "created_at": "2026-02-19T19:30:59.562239Z",
+        "is_driver": false,
+        "last_human_seen": "2026-02-19T19:41:44.201112Z",
+        "missing_notified": false
+      },
+      {
+        "camera_id": "f5882000-775d-40ef-8e18-f01603a6c059",
+        "name": "xx",
+        "url": "https://light-hounds-appear.loca.lt/nai-cam0/",
+        "created_at": "2026-02-19T19:31:59.248638Z",
+        "is_driver": false,
+        "last_human_seen": null,
+        "missing_notified": false
+      },
+      {
+        "camera_id": "75ebb19a-4fdc-4c9f-bee0-f1e090fa400d",
+        "name": "cff",
+        "url": "http://192.168.1.52:8888/nai-cam0/",
+        "created_at": "2026-02-19T19:33:00.384430Z",
+        "is_driver": false,
+        "last_human_seen": null,
+        "missing_notified": false
+      },
+      {
+        "camera_id": "5bab4cc7-da43-4c2d-83f9-8a9aad5ae7c3",
+        "name": "zxx",
+        "url": "http://192.168.1.52:8888/nai-cam0/index.m3u8",
+        "created_at": "2026-02-19T20:08:14.294897Z",
+        "is_driver": true,
+        "last_human_seen": "2026-02-19T20:14:50.665852Z",
+        "missing_notified": true
+      }
+    ],
+    "fcm_tokens": [
+      "c8r2qrweTQqfAZSgEkxlev:APA91bENLs7cXM3fyxwt5F-rtkwshfzuy5lSbcb37TZLU0RsS5D-Y6bY02DYrd8BbX3cwhFkEYBz9uJd1P0CgukWWvL22E0gAcgdsGkSSBzoyo2weS0utY4"
+    ],
+    "notifications": [
+      {
+        "id": "cc887bb5-c88d-4aba-b133-beb1b0937318",
+        "message": "No human detected on driver camera 'zxx' for 10s",
+        "created_at": "2026-02-19T20:16:00.143568Z",
+        "read": false
       }
     ]
   },
