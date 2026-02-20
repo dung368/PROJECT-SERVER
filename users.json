@@ -15,76 +15,16 @@
     "email": null,
     "hashed_password": "$2b$12$SVFCgRFoZjFdwI9fCBTCMORocLKB1ACR6iObP01gBMofzyFCv5QfC",
     "disabled": false,
-    "num_cams": 9,
+    "num_cams": 1,
     "cameras": [
-      {
-        "camera_id": "2de2aae0-4b47-432a-8ec1-9a7edfba8447",
-        "name": "fuck",
-        "url": "https://5c3c535dd67e.ngrok-free.app/nai-cam0/index.m3u8",
-        "created_at": "2026-02-02T01:34:18.189648Z"
-      },
-      {
-        "camera_id": "33acad2b-5aaf-44e4-8880-4e7d3d7ac4f5",
-        "name": "x",
-        "url": "http://192.168.2.221:8889/OK.m3u8",
-        "created_at": "2026-02-04T13:51:10.722233Z"
-      },
-      {
-        "camera_id": "dcc43e3a-ed5f-408b-96ca-04bc33e5fd27",
-        "name": "xx",
-        "url": "https://jokecam.loca.lt/OK.m3u8",
-        "created_at": "2026-02-04T13:53:55.240532Z"
-      },
-      {
-        "camera_id": "03a3603e-385b-47e0-9023-2c9080936991",
-        "name": "umi",
-        "url": "http://192.168.2.221:8000/overlay?url=http://localhost:8888/nai-cam0/index.m3u8",
-        "created_at": "2026-02-14T10:59:44.181251Z"
-      },
-      {
-        "camera_id": "24673e0e-ac33-464a-9960-3df2ccbc1250",
-        "name": "xd",
-        "url": "https://knolly-celebratory-fumiko.ngrok-free.dev/nai-cam0/index.m3u8",
-        "created_at": "2026-02-19T19:13:29.145285Z",
-        "is_driver": false,
-        "last_human_seen": null,
-        "missing_notified": false
-      },
-      {
-        "camera_id": "b894c724-9872-429c-b4c2-63d0819f6ac6",
-        "name": "cc",
-        "url": "https://light-hounds-appear.loca.lt/nai-cam0/index.m3u8",
-        "created_at": "2026-02-19T19:30:59.562239Z",
-        "is_driver": false,
-        "last_human_seen": "2026-02-19T19:41:44.201112Z",
-        "missing_notified": false
-      },
-      {
-        "camera_id": "f5882000-775d-40ef-8e18-f01603a6c059",
-        "name": "xx",
-        "url": "https://light-hounds-appear.loca.lt/nai-cam0/",
-        "created_at": "2026-02-19T19:31:59.248638Z",
-        "is_driver": false,
-        "last_human_seen": null,
-        "missing_notified": false
-      },
-      {
-        "camera_id": "75ebb19a-4fdc-4c9f-bee0-f1e090fa400d",
-        "name": "cff",
-        "url": "http://192.168.1.52:8888/nai-cam0/",
-        "created_at": "2026-02-19T19:33:00.384430Z",
-        "is_driver": false,
-        "last_human_seen": null,
-        "missing_notified": false
-      },
       {
         "camera_id": "5bab4cc7-da43-4c2d-83f9-8a9aad5ae7c3",
         "name": "zxx",
         "url": "http://192.168.1.52:8888/nai-cam0/index.m3u8",
         "created_at": "2026-02-19T20:08:14.294897Z",
         "is_driver": true,
-        "last_human_seen": "2026-02-19T20:14:50.665852Z",
-        "missing_notified": true
+        "last_human_seen": "2026-02-20T10:12:33.325522Z",
+        "missing_notified": false
       }
     ],
     "fcm_tokens": [
@@ -95,6 +35,78 @@
         "id": "cc887bb5-c88d-4aba-b133-beb1b0937318",
         "message": "No human detected on driver camera 'zxx' for 10s",
         "created_at": "2026-02-19T20:16:00.143568Z",
+        "read": false
+      },
+      {
+        "id": "13cf21d2-e9bf-4d04-807e-af25c3de1a99",
+        "message": "No human detected on driver camera 'zxx' for 10s",
+        "created_at": "2026-02-20T08:52:07.845583Z",
+        "read": false
+      },
+      {
+        "id": "7115eb2d-d8dd-420a-b551-4b2fd032bba3",
+        "message": "No human detected on driver camera 'zxx' for 10s",
+        "created_at": "2026-02-20T08:55:08.108621Z",
+        "read": false
+      },
+      {
+        "id": "abdf3547-4bae-4c8b-9eec-048c84e60480",
+        "message": "No human detected on driver camera 'zxx' for 10s",
+        "created_at": "2026-02-20T09:32:38.877847Z",
+        "read": false
+      },
+      {
+        "id": "6ba828e8-ddcd-41bc-ad8e-40c0fd497e39",
+        "message": "No human detected on driver camera 'zxx' for 10s",
+        "created_at": "2026-02-20T09:33:38.965720Z",
+        "read": false
+      },
+      {
+        "id": "2d5f40af-9f12-4db8-8768-5236b04ca3f5",
+        "message": "No human detected on driver camera 'zxx' for 10s",
+        "created_at": "2026-02-20T09:46:55.044679Z",
+        "read": false
+      },
+      {
+        "id": "8028bdb7-318d-4139-8ee5-c6f9e05fd69f",
+        "message": "No human detected on driver camera 'zxx' for 10s",
+        "created_at": "2026-02-20T09:48:55.231723Z",
+        "read": false
+      },
+      {
+        "id": "c3072e1d-f1fd-457f-8757-f3da00a8e2de",
+        "message": "No human detected on driver camera 'zxx' for 10s",
+        "created_at": "2026-02-20T09:58:55.738694Z",
+        "read": false
+      },
+      {
+        "id": "bba158ad-ba5c-423f-a0a5-f8c8488ef399",
+        "message": "No human detected on driver camera 'zxx' for 10s",
+        "created_at": "2026-02-20T09:59:55.879705Z",
+        "read": false
+      },
+      {
+        "id": "2f28503e-1bf4-4d12-87a4-f5fb2416820a",
+        "message": "No human detected on driver camera 'zxx' for 10s",
+        "created_at": "2026-02-20T10:01:56.050143Z",
+        "read": false
+      },
+      {
+        "id": "19080229-6b18-4541-bf5e-7bbe05c590ca",
+        "message": "No human detected on driver camera 'zxx' for 10s",
+        "created_at": "2026-02-20T10:05:24.398477Z",
+        "read": false
+      },
+      {
+        "id": "fee09127-f04a-4615-9df3-3cbff0ac4723",
+        "message": "No human detected on driver camera 'zxx' for 10s",
+        "created_at": "2026-02-20T10:08:24.834884Z",
+        "read": false
+      },
+      {
+        "id": "c2faad5d-5d55-4ba2-9894-3bfbf380ce95",
+        "message": "No human detected on driver camera 'zxx' for 10s",
+        "created_at": "2026-02-20T10:09:24.938864Z",
         "read": false
       }
     ]

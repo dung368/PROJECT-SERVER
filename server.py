@@ -19,6 +19,7 @@ from fastapi.responses import StreamingResponse, JSONResponse, Response
 
 # local module - must provide gen_img(url, username, camera_id, callback)
 import camera_util
+import camera_worker
 
 # Optional google auth to call FCM v1
 try:
@@ -655,6 +656,14 @@ async def start_background_tasks():
     # start driver monitor
     asyncio.create_task(_driver_monitor_loop())
 
+    # start persistent camera detection worker
+    try:
+        db_snapshot = await _read_db()
+        camera_worker.start_all_from_db(db_snapshot,mark_last_seen_sync)
+    except Exception:
+        import traceback
+        traceback.print_exc()
+
 
 # ----- camera DB helpers (used above) -----
 async def list_cameras_for_user(username: str) -> List[dict]:
@@ -681,6 +690,10 @@ async def add_camera_to_user(username: str, name: str, url: str) -> dict:
         db[username].setdefault("cameras", []).append(cam)
         db[username]["num_cams"] = len(db[username]["cameras"])
         await _write_db(db)
+        try:
+            camera_worker.start_worker(username, cam["camera_id"], cam["url"], mark_last_seen_sync)
+        except Exception:
+            pass
         return cam
 
 
