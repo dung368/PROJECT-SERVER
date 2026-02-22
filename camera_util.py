@@ -5,49 +5,18 @@ import asyncio
 import os
 from ultralytics import YOLO
 
-# try to parse data.yaml for class names (fallbacks below)
-def _load_names_from_data_yaml(path="data.yaml"):
-    try:
-        import yaml
-    except Exception:
-        return None
-
-    if not os.path.exists(path):
-        return None
-
-    try:
-        with open(path, "r", encoding="utf-8") as f:
-            doc = yaml.safe_load(f)
-        names = doc.get("names")
-        # names may be list or dict
-        if isinstance(names, list):
-            return {i: n for i, n in enumerate(names)}
-        if isinstance(names, dict):
-            # ensure int keys
-            return {int(k): v for k, v in names.items()}
-    except Exception:
-        return None
-    return None
-
-
 # Load model once (adjust path if needed)
 MODEL_PATH = "best.pt"
 _model = YOLO(MODEL_PATH)
 
 # Try to load names, falling back to model names if available
-_names = _load_names_from_data_yaml("data.yaml")
-if _names is None:
-    # ultralytics model has .names (dict or list)
-    try:
-        mnames = getattr(_model, "names", None)
-        if isinstance(mnames, dict):
-            _names = {int(k): v for k, v in mnames.items()}
-        elif isinstance(mnames, list):
-            _names = {i: n for i, n in enumerate(mnames)}
-        else:
-            _names = {}
-    except Exception:
-        _names = {}
+mnames = getattr(_model, "names", None)
+if isinstance(mnames, dict):
+    _names = {int(k): v for k, v in mnames.items()}
+elif isinstance(mnames, list):
+    _names = {i: n for i, n in enumerate(mnames)}
+else:
+    _names = {}
 
 # confidence threshold default
 DEFAULT_CONFIDENCE = 0.6
@@ -71,7 +40,6 @@ def _is_coroutine_callable(func):
         return True
     # if it's a normal function that returns coroutine when called, we detect later
     return False
-
 
 def gen_img(source,
             username: str | None = None,

@@ -9,25 +9,20 @@ import os
 import asyncio
 import threading
 import httpx
-
 from fastapi import FastAPI, HTTPException, Depends, status, Header, Query
+from fastapi.responses import StreamingResponse, JSONResponse, Response
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 from passlib.context import CryptContext
 from jose import jwt, JWTError
-from fastapi.responses import StreamingResponse, JSONResponse, Response
 
-# local module - must provide gen_img(url, username, camera_id, callback)
+# local module
 import camera_util
 import camera_worker
 
 # Optional google auth to call FCM v1
-try:
-    from google.oauth2 import service_account
-    from google.auth.transport.requests import Request as GoogleRequest
-    _HAS_GOOGLE_AUTH = True
-except Exception:
-    _HAS_GOOGLE_AUTH = False
+from google.oauth2 import service_account
+from google.auth.transport.requests import Request as GoogleRequest
 
 # ----- CONFIG -----
 SECRET_KEY = os.getenv("APP_SECRET_KEY", "replace-with-a-secure-random-secret")
@@ -40,7 +35,7 @@ _sync_file_lock = threading.Lock()  # used by synchronous helpers (camera util)
 
 # FCM config
 SERVICE_ACCOUNT_FILE = os.getenv("GOOGLE_APPLICATION_CREDENTIALS", "childmobile-ee6f3-firebase-adminsdk-fbsvc-13d6cadf35.json")
-FCM_SERVER_KEY = os.getenv("FCM_SERVER_KEY", None)  # legacy fallback
+FCM_SERVER_KEY = os.getenv("FCM_SERVER_KEY", None)  # legacy fallbackw
 _FCM_SCOPE = ["https://www.googleapis.com/auth/firebase.messaging"]
 _FCM_V1_ENDPOINT_FMT = "https://fcm.googleapis.com/v1/projects/childmobile-ee6f3/messages:send"
 
@@ -54,14 +49,11 @@ pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 def _normalize_password(password: str) -> str:
     return hashlib.sha256(password.encode("utf-8")).hexdigest()
 
-
 def get_password_hash(password: str) -> str:
     return pwd_context.hash(_normalize_password(password))
 
-
 def verify_password(plain: str, hashed: str) -> bool:
     return pwd_context.verify(_normalize_password(plain), hashed)
-
 
 def create_access_token(data: dict, expires_delta: Optional[timedelta] = None):
     to_encode = data.copy()
@@ -70,21 +62,16 @@ def create_access_token(data: dict, expires_delta: Optional[timedelta] = None):
     encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
     return encoded_jwt
 
-
 def decode_access_token(token: str) -> dict:
     payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
     return payload
 
-
 # ----- JSON DB helpers (async-safe) -----
 async def _read_db() -> Dict[str, dict]:
-    if not DB_FILE.exists():
-        return {}
     def read():
         text = DB_FILE.read_text(encoding="utf-8")
         return json.loads(text) if text.strip() else {}
     return await asyncio.to_thread(read)
-
 
 async def _write_db(data: Dict[str, dict]) -> None:
     def write():
@@ -93,14 +80,11 @@ async def _write_db(data: Dict[str, dict]) -> None:
         tmp.replace(DB_FILE)
     await asyncio.to_thread(write)
 
-
 async def load_user(username: str) -> Optional[dict]:
     db = await _read_db()
     return db.get(username)
 
-
-async def create_user(username: str, password: str, full_name: Optional[str], email: Optional[str],
-                      num_cams: int) -> dict:
+async def create_user(username: str, password: str) -> dict:
     async with _db_lock:
         db = await _read_db()
         if username in db:
@@ -110,11 +94,8 @@ async def create_user(username: str, password: str, full_name: Optional[str], em
         user = {
             "user_id": uid,
             "username": username,
-            "full_name": full_name,
-            "email": email,
             "hashed_password": hashed,
-            "disabled": False,
-            "num_cams": int(num_cams),
+            "num_cams": 0,
             "cameras": [],
             "notifications": [],
             "fcm_tokens": [],
@@ -122,7 +103,6 @@ async def create_user(username: str, password: str, full_name: Optional[str], em
         db[username] = user
         await _write_db(db)
         return user
-
 
 async def update_user(username: str, fields: dict) -> dict:
     async with _db_lock:
@@ -133,6 +113,61 @@ async def update_user(username: str, fields: dict) -> dict:
         await _write_db(db)
         return db[username]
 
+# ----- camera DB helpers (used above) -----
+async def list_cameras_for_user(username: str) -> List[dict]:
+    user = await load_user(username)
+    if not user:
+        raise KeyError("user not found")
+    return user.get("cameras", [])
+
+
+async def add_camera_to_user(username: str, name: str, url: str) -> dict:
+    async with _db_lock:
+        db = await _read_db()
+        if username not in db:
+            raise KeyError("user not found")
+        cam = {
+            "camera_id": str(uuid.uuid4()),
+            "name": name,
+            "url": url,
+            "created_at": datetime.utcnow().isoformat() + "Z",
+            "is_driver": False,
+            "last_human_seen": None,
+            "missing_notified": False,
+        }
+        db[username].setdefault("cameras", []).append(cam)
+        db[username]["num_cams"] = len(db[username]["cameras"])
+        await _write_db(db)
+        try:
+            camera_worker.start_worker(username, cam["camera_id"], cam["url"], mark_last_seen_sync)
+        except Exception:
+            pass
+        return cam
+
+
+async def get_camera_by_index(username: str, index: int) -> Optional[dict]:
+    user = await load_user(username)
+    if not user:
+        return None
+    cams = user.get("cameras", [])
+    if index < 0 or index >= len(cams):
+        return None
+    return cams[index]
+
+
+async def delete_camera_by_id(username: str, camera_id: str) -> bool:
+    async with _db_lock:
+        db = await _read_db()
+        if username not in db:
+            raise KeyError("user not found")
+        cams = db[username].get("cameras", [])
+        new_cams = [c for c in cams if c.get("camera_id") != camera_id]
+        if len(new_cams) == len(cams):
+            return False
+        db[username]["cameras"] = new_cams
+        db[username]["num_cams"] = len(new_cams)
+        await _write_db(db)
+        return True
 
 # Synchronous helper used by camera_util to set last_human_seen safely from threads/processes
 def mark_last_seen_sync(username: str, camera_id: str) -> None:
@@ -192,24 +227,19 @@ _cached_access_token_expiry = None
 
 def _load_service_account_creds():
     global _cached_credentials, _cached_project_id
-    if not _HAS_GOOGLE_AUTH:
-        return None
     if _cached_credentials is not None:
         return _cached_credentials
+    creds = service_account.Credentials.from_service_account_file(
+        SERVICE_ACCOUNT_FILE, scopes=_FCM_SCOPE
+    )
+    _cached_credentials = creds
+    # read project_id
     try:
-        creds = service_account.Credentials.from_service_account_file(
-            SERVICE_ACCOUNT_FILE, scopes=_FCM_SCOPE
-        )
-        _cached_credentials = creds
-        # read project_id
-        try:
-            data = json.loads(Path(SERVICE_ACCOUNT_FILE).read_text(encoding="utf-8"))
-            _cached_project_id = data.get("project_id")
-        except Exception:
-            _cached_project_id = None
-        return creds
+        data = json.loads(Path(SERVICE_ACCOUNT_FILE).read_text(encoding="utf-8"))
+        _cached_project_id = data.get("project_id")
     except Exception:
-        return None
+        _cached_project_id = None
+    return creds
 
 
 async def _get_fcm_access_token() -> Optional[str]:
@@ -230,7 +260,6 @@ async def _get_fcm_access_token() -> Optional[str]:
     _cached_access_token = token
     _cached_access_token_expiry = expiry
     return token
-
 
 async def _send_push_v1_single(token: str, title: str, body: str, data: dict | None = None) -> None:
     creds_token = await _get_fcm_access_token()
@@ -264,26 +293,6 @@ async def _send_push_v1_single(token: str, title: str, body: str, data: dict | N
         if r.status_code not in (200, 201):
             print("FCM v1 send failed:", r.status_code, r.text)
 
-
-async def _send_push_legacy(tokens: List[str], title: str, body: str, data: dict | None = None) -> None:
-    """
-    Legacy FCM endpoint using server key. Can send multiple tokens in one request (registration_ids).
-    """
-    if not FCM_SERVER_KEY:
-        raise RuntimeError("No legacy FCM server key configured")
-    payload = {
-        "registration_ids": tokens,
-        "notification": {"title": title, "body": body},
-        "data": data or {},
-        "priority": "high",
-    }
-    headers = {"Authorization": f"key={FCM_SERVER_KEY}", "Content-Type": "application/json"}
-    async with httpx.AsyncClient(timeout=10.0) as client:
-        r = await client.post("https://fcm.googleapis.com/fcm/send", json=payload, headers=headers)
-        if r.status_code != 200:
-            print("FCM legacy send failed:", r.status_code, r.text)
-
-
 async def _send_push_to_tokens(tokens: List[str], title: str, body: str, data: dict | None = None):
     """
     Top-level push sender: try FCM v1 via service account per-token; if not available, fallback to legacy batch send.
@@ -297,20 +306,14 @@ async def _send_push_to_tokens(tokens: List[str], title: str, body: str, data: d
         # don't raise if one fails; log instead
         await asyncio.gather(*[ _catch_and_log(t) for t in tasks ])
         return
-    # fallback to legacy single batch call (registration_ids)
-    if FCM_SERVER_KEY:
-        await _send_push_legacy(tokens, title, body, data)
-        return
     # no available sending method
     print("No FCM credentials configured; cannot send push")
-
 
 async def _catch_and_log(coro):
     try:
         await coro
     except Exception as e:
         print("FCM send error (individual):", e)
-
 
 async def _send_push_to_user(username: str, title: str, body: str, data: dict | None = None):
     db = await _read_db()
@@ -321,7 +324,6 @@ async def _send_push_to_user(username: str, title: str, body: str, data: dict | 
     if tokens:
         # fire-and-forget send in background
         asyncio.create_task(_send_push_to_tokens(tokens, title, body, data))
-
 
 # store notification in DB and send push
 async def _add_notification(username: str, message: str) -> None:
@@ -410,24 +412,16 @@ class LoginRequest(BaseModel):
     username: str
     password: str
 
-
 class SignupRequest(BaseModel):
     username: str
     password: str
-    full_name: Optional[str] = None
-    email: Optional[str] = None
-    num_cams: Optional[int] = 1
-
 
 class TokenResponse(BaseModel):
     token: str
 
-
 class CameraCreate(BaseModel):
     name: str = Field(..., min_length=1)
     url: str = Field(..., min_length=4)
-
-
 
 class CameraOut(BaseModel):
     camera_id: str
@@ -441,24 +435,18 @@ class CameraOut(BaseModel):
 class UserOut(BaseModel):
     user_id: str
     username: str
-    full_name: Optional[str] = None
-    email: Optional[str] = None
     num_cams: int
-    # now the cameras list will include is_driver etc.
     cameras: List[CameraOut] = []
 
 class CameraUpdate(BaseModel):
     name: Optional[str] = None
     url: Optional[str] = None
 
-
 class DriverUpdate(BaseModel):
     is_driver: bool
 
-
 class DeviceTokenIn(BaseModel):
     token: str
-
 
 # ----- FastAPI app -----
 app = FastAPI(title="Auth + Camera API with Driver Monitor")
@@ -469,7 +457,6 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
 
 # ----- Auth dependency -----
 async def get_current_user(authorization: Optional[str] = Header(None)):
@@ -489,10 +476,7 @@ async def get_current_user(authorization: Optional[str] = Header(None)):
     user = await load_user(username)
     if user is None:
         raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="User not found")
-    if user.get("disabled"):
-        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="User disabled")
     return user
-
 
 # ----- Routes -----
 @app.post("/signup")
@@ -500,15 +484,12 @@ async def signup(payload: SignupRequest):
     username = payload.username.strip()
     if not username:
         raise HTTPException(status_code=400, detail="username required")
-    if payload.num_cams is None or payload.num_cams < 1:
-        raise HTTPException(status_code=400, detail="num_cams must be >= 1")
     try:
-        user = await create_user(username, payload.password, payload.full_name, payload.email, payload.num_cams)
+        user = await create_user(username, payload.password)
     except ValueError:
         raise HTTPException(status_code=400, detail="username already exists")
     access_token = create_access_token({"sub": user["username"], "uid": user["user_id"]})
     return {"user_id": user["user_id"], "token": access_token}
-
 
 @app.post("/login", response_model=TokenResponse)
 async def login(payload: LoginRequest):
@@ -518,34 +499,27 @@ async def login(payload: LoginRequest):
     access_token = create_access_token({"sub": user["username"], "uid": user["user_id"]})
     return {"token": access_token}
 
-
 @app.get("/current", response_model=UserOut)
 async def get_current(user: dict = Depends(get_current_user)):
     return {
         "user_id": user["user_id"],
         "username": user["username"],
-        "full_name": user.get("full_name"),
-        "email": user.get("email"),
         "num_cams": user.get("num_cams", 1),
         "cameras": user.get("cameras", []),
     }
-
 
 @app.get("/num_cam")
 async def get_num_cam(user: dict = Depends(get_current_user)):
     return {"num": len(user.get("cameras", []))}
 
-
 @app.get("/cameras", response_model=List[CameraOut])
 async def list_cameras(user: dict = Depends(get_current_user)):
     return user.get("cameras", [])
-
 
 @app.post("/cameras", response_model=CameraOut, status_code=201)
 async def create_camera(payload: CameraCreate, user: dict = Depends(get_current_user)):
     cam = await add_camera_to_user(user["username"], payload.name, payload.url)
     return cam
-
 
 @app.delete("/cameras/{camera_id}", status_code=204)
 async def remove_camera(camera_id: str, user: dict = Depends(get_current_user)):
@@ -553,7 +527,6 @@ async def remove_camera(camera_id: str, user: dict = Depends(get_current_user)):
     if not ok:
         raise HTTPException(status_code=404, detail="Camera not found")
     return Response(status_code=204)
-
 
 @app.post("/cameras/{camera_id}/driver")
 async def set_camera_driver_flag(camera_id: str, payload: DriverUpdate, user: dict = Depends(get_current_user)):
@@ -573,7 +546,6 @@ async def set_camera_driver_flag(camera_id: str, payload: DriverUpdate, user: di
                 return {"camera_id": camera_id, "is_driver": cam["is_driver"]}
         raise HTTPException(status_code=404, detail="Camera not found")
 
-
 @app.post("/devices/register")
 async def register_device(payload: DeviceTokenIn, user: dict = Depends(get_current_user)):
     try:
@@ -581,7 +553,6 @@ async def register_device(payload: DeviceTokenIn, user: dict = Depends(get_curre
     except KeyError:
         raise HTTPException(status_code=404, detail="User not found")
     return {"status": "ok"}
-
 
 @app.post("/devices/unregister")
 async def unregister_device(payload: DeviceTokenIn, user: dict = Depends(get_current_user)):
@@ -591,13 +562,11 @@ async def unregister_device(payload: DeviceTokenIn, user: dict = Depends(get_cur
         pass
     return {"status": "ok"}
 
-
 @app.get("/notifications")
 async def get_notifications(user: dict = Depends(get_current_user)):
     # return user's notifications (newest first)
     notes = list(reversed(user.get("notifications", [])))
     return JSONResponse(content=notes)
-
 
 @app.get("/overlay")
 async def overlay(username: str = Query(...), cam_index: int = Query(...)):
@@ -625,7 +594,6 @@ async def overlay(username: str = Query(...), cam_index: int = Query(...)):
 
     return StreamingResponse(gen, media_type="multipart/x-mixed-replace; boundary=frame")
 
-
 @app.get("/")
 async def root():
     return {"message": "FastAPI server running."}
@@ -642,10 +610,7 @@ async def start_background_tasks():
             user = {
                 "user_id": uid,
                 "username": "nai",
-                "full_name": None,
-                "email": None,
                 "hashed_password": get_password_hash("nai"),
-                "disabled": False,
                 "num_cams": 0,
                 "cameras": [],
                 "notifications": [],
@@ -663,60 +628,3 @@ async def start_background_tasks():
     except Exception:
         import traceback
         traceback.print_exc()
-
-
-# ----- camera DB helpers (used above) -----
-async def list_cameras_for_user(username: str) -> List[dict]:
-    user = await load_user(username)
-    if not user:
-        raise KeyError("user not found")
-    return user.get("cameras", [])
-
-
-async def add_camera_to_user(username: str, name: str, url: str) -> dict:
-    async with _db_lock:
-        db = await _read_db()
-        if username not in db:
-            raise KeyError("user not found")
-        cam = {
-            "camera_id": str(uuid.uuid4()),
-            "name": name,
-            "url": url,
-            "created_at": datetime.utcnow().isoformat() + "Z",
-            "is_driver": False,
-            "last_human_seen": None,
-            "missing_notified": False,
-        }
-        db[username].setdefault("cameras", []).append(cam)
-        db[username]["num_cams"] = len(db[username]["cameras"])
-        await _write_db(db)
-        try:
-            camera_worker.start_worker(username, cam["camera_id"], cam["url"], mark_last_seen_sync)
-        except Exception:
-            pass
-        return cam
-
-
-async def get_camera_by_index(username: str, index: int) -> Optional[dict]:
-    user = await load_user(username)
-    if not user:
-        return None
-    cams = user.get("cameras", [])
-    if index < 0 or index >= len(cams):
-        return None
-    return cams[index]
-
-
-async def delete_camera_by_id(username: str, camera_id: str) -> bool:
-    async with _db_lock:
-        db = await _read_db()
-        if username not in db:
-            raise KeyError("user not found")
-        cams = db[username].get("cameras", [])
-        new_cams = [c for c in cams if c.get("camera_id") != camera_id]
-        if len(new_cams) == len(cams):
-            return False
-        db[username]["cameras"] = new_cams
-        db[username]["num_cams"] = len(new_cams)
-        await _write_db(db)
-        return True
