@@ -24,7 +24,7 @@
         "created_at": "2026-02-19T20:08:14.294897Z",
         "is_driver": true,
         "last_human_seen": "2026-02-22T03:15:04.412666Z",
-        "missing_notified": false
+        "missing_notified": true
       }
     ],
     "fcm_tokens": [
@@ -137,6 +137,12 @@
         "id": "a17fef39-7e6f-4a4a-a6f8-a28e0417b6d3",
         "message": "No human detected on driver camera 'zxx' for 10s",
         "created_at": "2026-02-22T03:13:50.916398Z",
+        "read": false
+      },
+      {
+        "id": "5e46af12-6bee-4a2e-bf19-7bc05279a181",
+        "message": "No human detected on driver camera 'zxx' for 10s",
+        "created_at": "2026-02-23T07:50:05.244286Z",
         "read": false
       }
     ]

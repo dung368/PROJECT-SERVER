@@ -1,0 +1,6 @@
+fastapi[standard]
+passlib
+python-jose
+opencv-python
+ultralytics
+google-api-python-client
