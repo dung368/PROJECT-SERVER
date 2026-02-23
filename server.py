@@ -34,7 +34,7 @@ _db_lock = asyncio.Lock()  # guards writes/reads to the JSON file
 _sync_file_lock = threading.Lock()  # used by synchronous helpers (camera util)
 
 # FCM config
-SERVICE_ACCOUNT_FILE = os.getenv("GOOGLE_APPLICATION_CREDENTIALS", "childmobile-ee6f3-firebase-adminsdk-fbsvc-13d6cadf35.json")
+SERVICE_ACCOUNT_FILE = os.getenv("GOOGLE_APPLICATION_CREDENTIALS", "firebase_config.json")
 FCM_SERVER_KEY = os.getenv("FCM_SERVER_KEY", None)  # legacy fallbackw
 _FCM_SCOPE = ["https://www.googleapis.com/auth/firebase.messaging"]
 _FCM_V1_ENDPOINT_FMT = "https://fcm.googleapis.com/v1/projects/childmobile-ee6f3/messages:send"
