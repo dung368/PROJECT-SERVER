@@ -18,12 +18,12 @@
     "num_cams": 1,
     "cameras": [
       {
-        "camera_id": "5bab4cc7-da43-4c2d-83f9-8a9aad5ae7c3",
-        "name": "zxx",
-        "url": "http://192.168.1.52:8888/nai-cam0/index.m3u8",
-        "created_at": "2026-02-19T20:08:14.294897Z",
+        "camera_id": "0f467d18-fb72-4857-b000-a1a4034974c0",
+        "name": "eee",
+        "url": "http://192.168.4.223:8888/nai-cam0/index.m3u8",
+        "created_at": "2026-02-24T03:16:02.509704Z",
         "is_driver": true,
-        "last_human_seen": "2026-02-22T03:15:04.412666Z",
+        "last_human_seen": "2026-02-24T03:18:05.169058Z",
         "missing_notified": true
       }
     ],
@@ -143,6 +143,30 @@
         "id": "5e46af12-6bee-4a2e-bf19-7bc05279a181",
         "message": "No human detected on driver camera 'zxx' for 10s",
         "created_at": "2026-02-23T07:50:05.244286Z",
+        "read": false
+      },
+      {
+        "id": "864d441e-9ef0-4d99-9848-1d5215ac4cbe",
+        "message": "No human detected on driver camera 'zxx' for 10s",
+        "created_at": "2026-02-24T03:01:35.999535Z",
+        "read": false
+      },
+      {
+        "id": "45962a2d-f56b-4f23-8868-8c1164379697",
+        "message": "No human detected on driver camera 'zxx' for 10s",
+        "created_at": "2026-02-24T03:11:42.875681Z",
+        "read": false
+      },
+      {
+        "id": "23fcf3ce-99a3-4513-86a8-b70fee0048a0",
+        "message": "No human detected on driver camera 'zxx' for 10s",
+        "created_at": "2026-02-24T03:12:42.952083Z",
+        "read": false
+      },
+      {
+        "id": "50d701e4-028d-4404-9723-b48316829249",
+        "message": "No human detected on driver camera 'eee' for 10s",
+        "created_at": "2026-02-24T03:18:43.026038Z",
         "read": false
       }
     ]

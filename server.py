@@ -537,7 +537,9 @@ async def set_camera_driver_flag(camera_id: str, payload: DriverUpdate, user: di
         cams = u.setdefault("cameras", [])
         for cam in cams:
             if cam.get("camera_id") == camera_id:
+                camera_worker.stop_worker(camera_id)
                 cam["is_driver"] = bool(payload.is_driver)
+                camera_worker.start_worker(u, camera_id, cam["url"], mark_last_seen_sync,is_driver=cam["is_driver"])
                 if payload.is_driver:
                     cam.setdefault("last_human_seen", None)
                     cam["missing_notified"] = False
