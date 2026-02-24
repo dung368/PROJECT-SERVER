@@ -1,4 +1,3 @@
-# server.py
 import json
 import uuid
 import hashlib
