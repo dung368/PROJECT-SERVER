@@ -39,7 +39,7 @@ _FCM_SCOPE = ["https://www.googleapis.com/auth/firebase.messaging"]
 _FCM_V1_ENDPOINT_FMT = "https://fcm.googleapis.com/v1/projects/childmobile-ee6f3/messages:send"
 
 # Driver monitor timeout (seconds). Default 30 minutes (1800s). Change to 10 for testing.
-DEFAULT_DRIVER_TIMEOUT = 1800
+DEFAULT_DRIVER_TIMEOUT = 2
 
 # ----- AUTH helpers -----
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
@@ -328,6 +328,7 @@ async def _send_push_to_user(username: str, title: str, body: str, data: dict | 
 
 # store notification in DB and send push
 async def _add_notification(username: str, message: str) -> None:
+    print("ok")
     async with _db_lock:
         db = await _read_db()
         user = db.get(username)
@@ -354,25 +355,30 @@ async def _driver_monitor_loop():
     - if last_human_seen > DRIVER_MISSING_TIMEOUT_SECONDS ago and not notified, create notification.
     - If any other camera has human within timeout, include that in message.
     """
-    sleep_seconds = max(1, int(os.getenv("DRIVER_MONITOR_INTERVAL_SECONDS", 60)))
+    sleep_seconds = max(1, int(os.getenv("DRIVER_MONITOR_INTERVAL_SECONDS", 1)))
+    print("new loop")
     while True:
         try:
             db = await _read_db()
             now = datetime.utcnow()
-            timeout = timedelta(seconds=int(u.get("driver_timeout_seconds")))
+            
+            
             for username, u in db.items():
+                username = u.get("username")
+                
+                timeout = timedelta(seconds=int(u.get("driver_timeout_seconds")))
+                
                 for cam in u.get("cameras", []):
                     if not cam.get("is_driver"):
                         continue
                     last_iso = cam.get("last_human_seen")
                     notified = bool(cam.get("missing_notified", False))
                     last_dt = None
+                    
                     if last_iso:
-                        try:
-                            last_dt = datetime.fromisoformat(last_iso.replace("Z", ""))
-                        except Exception:
-                            last_dt = None
-                    if last_dt and (now - last_dt) > timeout and not notified:
+                        last_dt = datetime.fromisoformat(last_iso.replace("Z", ""))
+                    print(timeout.seconds)
+                    if (not last_dt) or ((now - last_dt).seconds > timeout.seconds and not notified):
                         # check other cameras for recent human presence (within timeout)
                         other_human_found = False
                         for oc in u.get("cameras", []):
@@ -392,7 +398,6 @@ async def _driver_monitor_loop():
                         if other_human_found:
                             msg += "; but detected on other cameras — please check."
                         await _add_notification(username, msg)
-
                         # set camera missing_notified flag atomically
                         async with _db_lock:
                             db2 = await _read_db()
@@ -627,7 +632,7 @@ async def overlay(username: str = Query(...), cam_index: int = Query(...)):
 @app.get("/settings/driver_timeout")
 async def get_driver_timeout(user: dict = Depends(get_current_user)):
     val = await get_driver_timeout_for_user(user["username"])
-    return {"driver_timeout_seconds": val}
+    return val#{"driver_timeout_seconds": val}
 
 @app.post("/settings/driver_timeout")
 async def post_driver_timeout(payload: DriverTimeoutIn, user: dict = Depends(get_current_user)):
@@ -639,6 +644,10 @@ async def post_driver_timeout(payload: DriverTimeoutIn, user: dict = Depends(get
     except KeyError:
         raise HTTPException(stats_code=404, detail = "User not found")
     return {"driver_timeout_seconds": updated}
+
+@app.get("/cam/timeout")
+async def root():
+    return {"message": "FastAPI server running."}
 
 @app.get("/")
 async def root():

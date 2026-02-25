@@ -132,7 +132,7 @@ def _run_worker(username: str, camera_id: str, url: str, stop_event: threading.E
 
                 # Run inference
                 try:
-                    results = model(frame)
+                    results = model(frame, verbose=False)
                 except Exception:
                     traceback.print_exc()
                     time.sleep(1.0)

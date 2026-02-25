@@ -135,7 +135,7 @@ def gen_img(source,
             t0 = time.time()
             # run inference (model returns a Results list)
             try:
-                results = model(frame)
+                results = model(frame, verbose=False)
             except Exception as e:
                 # inference error — print and continue streaming original frame
                 print("camera_utils: model inference error:", e)

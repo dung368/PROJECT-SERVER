@@ -1,13 +1,4 @@
 {
-  "nai": {
-    "user_id": "d9565d44-131f-4518-a00e-8c4558197b07",
-    "username": "nai",
-    "full_name": null,
-    "email": null,
-    "hashed_password": "$2b$12$wG7hmPSoZv9lJDehrjS.Ku8/yaS7gJjtDdxumzJLNZ1YlVV9nY0C2",
-    "disabled": false,
-    "num_cams": 2
-  },
   "nainai": {
     "user_id": "30096475-e9c3-41a6-8d9f-0cecbe708c63",
     "username": "nainai",
@@ -18,17 +9,19 @@
     "num_cams": 1,
     "cameras": [
       {
-        "camera_id": "d9a3a2ca-3284-4174-b3e6-4d376a7ad6a7",
-        "name": "cccc",
-        "url": "http://192.168.1.52:8888/nai-cam0/index.m3u8",
-        "created_at": "2026-02-25T08:41:12.682551Z",
+        "camera_id": "0e5aadfb-5a13-42ff-bcf5-d16c5454edbf",
+        "name": "umi",
+        "url": "http://192.168.2.221:8888/nai-cam0/index.m3u8",
+        "created_at": "2026-02-25T13:14:13.824804Z",
         "is_driver": true,
-        "last_human_seen": "2026-02-25T09:38:48.613357Z",
-        "missing_notified": false
+        "last_human_seen": "2026-02-25T14:03:40.263551Z",
+        "missing_notified": true
       }
     ],
     "fcm_tokens": [
-      "c8r2qrweTQqfAZSgEkxlev:APA91bENLs7cXM3fyxwt5F-rtkwshfzuy5lSbcb37TZLU0RsS5D-Y6bY02DYrd8BbX3cwhFkEYBz9uJd1P0CgukWWvL22E0gAcgdsGkSSBzoyo2weS0utY4"
+      "c8r2qrweTQqfAZSgEkxlev:APA91bENLs7cXM3fyxwt5F-rtkwshfzuy5lSbcb37TZLU0RsS5D-Y6bY02DYrd8BbX3cwhFkEYBz9uJd1P0CgukWWvL22E0gAcgdsGkSSBzoyo2weS0utY4",
+      "dxrBco4iS0qUviMJdiZ5jZ:APA91bHMX3Zi7hq-leUPez5Qs6aWpnK82VeJ2_FT12y5IhUys0H3HviJVV0JsG3e0CItRnjNqW1xoQq0K8uEpgdtcScZhOs_IntgrZwrRjKWGD7DuIDHIIg",
+      "eEOjYjyzRoKiKvB_VfCxW3:APA91bF6k-TqJ4yrJm2qqzWxa6a0dZA9axXn1SdK0QG4tYSDdsTfdtpx2udRJyr-ezYHykneR7l9p-rclmijz_tm7XE0FK1_cFidoqlOQBoLIAJ-N_e9y9Y"
     ],
     "notifications": [
       {
@@ -168,8 +161,1982 @@
         "message": "No human detected on driver camera 'eee' for 10s",
         "created_at": "2026-02-24T03:18:43.026038Z",
         "read": false
+      },
+      {
+        "id": "2c5370b2-7d76-4d8b-9188-8b216b5e241d",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:39:34.986265Z",
+        "read": false
+      },
+      {
+        "id": "51d7017e-0138-4ffe-9a1c-d6ffd4b866f3",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:39:39.761973Z",
+        "read": false
+      },
+      {
+        "id": "bd065fc9-21ec-4093-ab97-1ba189a4613a",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:40:18.532436Z",
+        "read": false
+      },
+      {
+        "id": "d0189af6-f1ff-4576-9604-f297f5625d56",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:40:22.306346Z",
+        "read": false
+      },
+      {
+        "id": "a318aba4-1ad9-4771-9d14-03c76eed3ffa",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:40:22.354656Z",
+        "read": false
+      },
+      {
+        "id": "6141cfee-bd36-4d7e-8c3c-f07dde1b28ac",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:40:22.378592Z",
+        "read": false
+      },
+      {
+        "id": "03f5401a-b25b-4e28-93df-e179bb098940",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:40:22.400045Z",
+        "read": false
+      },
+      {
+        "id": "c5a6dd5d-a29e-43e8-a05d-94c818ba90da",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:40:22.451013Z",
+        "read": false
+      },
+      {
+        "id": "9474fcd2-f000-4bdf-afd7-ff5fc6a16512",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:40:22.475995Z",
+        "read": false
+      },
+      {
+        "id": "0ebfdf31-e51b-4691-b53f-3df9382c0944",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:40:22.534159Z",
+        "read": false
+      },
+      {
+        "id": "a6392bb3-e88b-4506-b662-eaecef7fe138",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:40:22.598282Z",
+        "read": false
+      },
+      {
+        "id": "187ad68f-03f9-45fb-9222-fbe5779f9fe3",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:40:26.792194Z",
+        "read": false
+      },
+      {
+        "id": "2a7aefe4-f61b-4f68-8eb3-1dcf3b6e6174",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:40:27.699119Z",
+        "read": false
+      },
+      {
+        "id": "1df24767-be91-4590-8387-ea49dd808d07",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:40:27.733245Z",
+        "read": false
+      },
+      {
+        "id": "0e3947a4-1385-4d4a-92a7-eacd47cafb07",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:40:27.773286Z",
+        "read": false
+      },
+      {
+        "id": "9d07b14f-5794-4e21-ac4f-463deb44e79a",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:40:27.855490Z",
+        "read": false
+      },
+      {
+        "id": "7f8fa563-5081-4c61-92a2-8b106d04ed6a",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:40:27.888150Z",
+        "read": false
+      },
+      {
+        "id": "8173fd9b-7e55-4231-9caf-849a67a1f370",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:40:27.931772Z",
+        "read": false
+      },
+      {
+        "id": "70be0133-1fd2-4894-ab35-6e2d7097b953",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:40:27.972386Z",
+        "read": false
+      },
+      {
+        "id": "21b6e968-d60f-4a4b-884e-1eed66d45d8a",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:40:31.817662Z",
+        "read": false
+      },
+      {
+        "id": "f49fd28c-a999-4946-8598-988753ae10c9",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:40:32.966443Z",
+        "read": false
+      },
+      {
+        "id": "8a0502b9-1580-4427-838f-4f0416215994",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:40:33.005708Z",
+        "read": false
+      },
+      {
+        "id": "dd459f80-10f9-4642-947b-2b5d7fb42ee5",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:40:33.050487Z",
+        "read": false
+      },
+      {
+        "id": "4da2b70d-7674-4a96-afc6-d7a11e708c7c",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:40:33.144277Z",
+        "read": false
+      },
+      {
+        "id": "8a1f5806-5092-4866-a9c1-ba8a4b6ca02c",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:40:33.178820Z",
+        "read": false
+      },
+      {
+        "id": "be3b542f-f2a9-4934-87c9-25c2a58717a1",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:40:33.223577Z",
+        "read": false
+      },
+      {
+        "id": "54b57067-1002-42ba-944e-371f19805d7f",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:40:33.356915Z",
+        "read": false
+      },
+      {
+        "id": "11ae16ca-78cc-492f-b2c4-d3bd63331257",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:40:36.826757Z",
+        "read": false
+      },
+      {
+        "id": "a2b0f5ca-48fe-4144-a67e-e753dcbed776",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:40:38.086984Z",
+        "read": false
+      },
+      {
+        "id": "8013726d-d498-4f20-9075-a6c152d215ef",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:40:38.128278Z",
+        "read": false
+      },
+      {
+        "id": "49e7dc33-1977-4fe1-8860-61e0c4e79003",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:40:38.192166Z",
+        "read": false
+      },
+      {
+        "id": "8075c705-ef87-4924-80e7-458f77d91e17",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:40:38.262705Z",
+        "read": false
+      },
+      {
+        "id": "b5f22cb3-78ef-4c1e-8b56-99d66b37c3ab",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:40:38.297897Z",
+        "read": false
+      },
+      {
+        "id": "6642b7f0-3139-4ceb-ada5-cb63ef400d0b",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:40:38.340126Z",
+        "read": false
+      },
+      {
+        "id": "a4ce375c-e5b9-432b-8a56-4c11dfa104c6",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:40:38.397241Z",
+        "read": false
+      },
+      {
+        "id": "bdd8c483-5513-49d3-b068-59ab9050ea74",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:40:42.061297Z",
+        "read": false
+      },
+      {
+        "id": "5d9d2a32-3c51-4649-9a6c-41cda5a17a9b",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:40:43.356534Z",
+        "read": false
+      },
+      {
+        "id": "be5a1b34-9630-4181-9d72-f94db5b81dfc",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:40:43.395708Z",
+        "read": false
+      },
+      {
+        "id": "cbf95b77-09e2-488d-a0de-06f1fbb90d3d",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:40:43.429304Z",
+        "read": false
+      },
+      {
+        "id": "28ff004c-1f6f-4a41-b219-5f7f0c8bd073",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:40:43.504887Z",
+        "read": false
+      },
+      {
+        "id": "5e64a7c3-f537-409a-ba98-5a964968f697",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:40:43.552849Z",
+        "read": false
+      },
+      {
+        "id": "2e6657db-20d0-4bc5-b5b5-a483df109cfd",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:40:43.591268Z",
+        "read": false
+      },
+      {
+        "id": "575e163e-1029-4673-b686-00536025ef5f",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:40:43.652541Z",
+        "read": false
+      },
+      {
+        "id": "d9db0420-d73c-46e2-a58c-3a61ef2dba7a",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:40:47.360426Z",
+        "read": false
+      },
+      {
+        "id": "efd12dff-0fa1-4d65-bfc6-a3f1ba467d93",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:40:48.682676Z",
+        "read": false
+      },
+      {
+        "id": "6944fcc2-d2ba-4937-9cfc-06562160bc0c",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:40:48.717252Z",
+        "read": false
+      },
+      {
+        "id": "d11629b7-20b6-4588-aaf6-7f3016c03026",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:40:48.755977Z",
+        "read": false
+      },
+      {
+        "id": "9cebd008-69a6-4ce5-b244-dede21818c38",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:40:48.836730Z",
+        "read": false
+      },
+      {
+        "id": "21887c34-78e1-4511-9bae-c81ca8ec9ac9",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:40:48.887949Z",
+        "read": false
+      },
+      {
+        "id": "ed12db33-2ac7-4bcd-b708-4e0717886777",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:40:48.925739Z",
+        "read": false
+      },
+      {
+        "id": "8709ff42-898f-43c2-95ec-4ec0fdfce977",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:40:48.964326Z",
+        "read": false
+      },
+      {
+        "id": "f21c954e-f8f6-4165-b47b-e245d5ec27cf",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:40:53.773857Z",
+        "read": false
+      },
+      {
+        "id": "b1327d90-76c2-4740-8eb6-247d50badb58",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:40:54.141888Z",
+        "read": false
+      },
+      {
+        "id": "df92f7a3-f5b9-4761-a9d4-0bd1dc9ca28d",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:40:54.180054Z",
+        "read": false
+      },
+      {
+        "id": "fc4a0952-058f-4fda-887c-beb5ffe463f7",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:40:54.237901Z",
+        "read": false
+      },
+      {
+        "id": "aaa3f0cc-22cd-4273-acdf-ac52a0fe7d7c",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:40:54.340272Z",
+        "read": false
+      },
+      {
+        "id": "be61fb47-2f55-4564-af91-a920764a5870",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:40:54.376923Z",
+        "read": false
+      },
+      {
+        "id": "8ac1fb02-6048-4c8c-9e20-a77e4cc59204",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:40:54.426005Z",
+        "read": false
+      },
+      {
+        "id": "9fc10d30-193f-4444-9390-f95c00be941b",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:40:54.530875Z",
+        "read": false
+      },
+      {
+        "id": "6021cbc4-6d9d-4d91-8be8-2fd620bba450",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:40:58.483402Z",
+        "read": false
+      },
+      {
+        "id": "7b698be6-a3dd-45cf-881f-f7d8284fa566",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:40:59.562631Z",
+        "read": false
+      },
+      {
+        "id": "3aa5afe2-6178-4b8e-a29c-ea7fe86f0ec3",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:40:59.599154Z",
+        "read": false
+      },
+      {
+        "id": "b29f63a9-46c3-402b-b194-9ba96a92fa4e",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:40:59.653346Z",
+        "read": false
+      },
+      {
+        "id": "588bc0cb-8982-434b-bdb4-ea08858552db",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:40:59.732483Z",
+        "read": false
+      },
+      {
+        "id": "7d844f60-278d-479b-9491-e6aa7d4e6599",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:40:59.770371Z",
+        "read": false
+      },
+      {
+        "id": "e63fe360-ea0c-4fe5-8e38-1aeb04cf5d33",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:40:59.816348Z",
+        "read": false
+      },
+      {
+        "id": "44254f32-0ea0-4e81-b6af-bd6eb89c624c",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:40:59.872095Z",
+        "read": false
+      },
+      {
+        "id": "e2a4021a-dbae-41cf-b80f-224a1e948580",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:41:04.061835Z",
+        "read": false
+      },
+      {
+        "id": "b64a3c61-f199-42dd-87b1-1c08bf4bd288",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:41:05.056825Z",
+        "read": false
+      },
+      {
+        "id": "14a4dd5d-adb4-4159-a2b9-23362ab4d95d",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:41:05.097457Z",
+        "read": false
+      },
+      {
+        "id": "91f7e3a6-719b-441a-b94f-7bd5820937df",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:41:05.155711Z",
+        "read": false
+      },
+      {
+        "id": "c5d3efbe-397b-4886-adde-453194d6c321",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:41:05.233030Z",
+        "read": false
+      },
+      {
+        "id": "c44613b1-4fd3-4295-80ff-2080c040f038",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:41:05.264964Z",
+        "read": false
+      },
+      {
+        "id": "5e75f492-f1ac-4100-a576-b3064efeff4f",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:41:05.305681Z",
+        "read": false
+      },
+      {
+        "id": "24930c23-0735-48c3-badb-f94cd1db7c09",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:41:05.367735Z",
+        "read": false
+      },
+      {
+        "id": "5beba91c-866e-4a34-bbcf-03b09997ed7f",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:41:09.301476Z",
+        "read": false
+      },
+      {
+        "id": "0abe922e-6f09-4dc5-a7c3-2a160e61f993",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:41:10.452508Z",
+        "read": false
+      },
+      {
+        "id": "5e9e8cee-6e17-4720-9c96-44490984f163",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:41:10.489044Z",
+        "read": false
+      },
+      {
+        "id": "fcf89c1c-3d26-4a5b-8b40-56f28844bf6d",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:41:10.534929Z",
+        "read": false
+      },
+      {
+        "id": "99c79482-7426-450b-806b-8988df577920",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:41:10.566801Z",
+        "read": false
+      },
+      {
+        "id": "7f02cf41-5027-4227-9267-9f32334ec0bf",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:41:10.646704Z",
+        "read": false
+      },
+      {
+        "id": "cd095b7b-0e56-4d0e-93fc-92acdbaa356e",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:41:10.704898Z",
+        "read": false
+      },
+      {
+        "id": "310c081c-7dde-43ed-a90e-9eac69a77f91",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:41:10.755684Z",
+        "read": false
+      },
+      {
+        "id": "d8713adb-241a-4baf-89b8-4c7dde0abcd4",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:41:14.115766Z",
+        "read": false
+      },
+      {
+        "id": "c78f8342-bbb2-4c9a-bdd8-35cb7043d3c8",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:41:15.776163Z",
+        "read": false
+      },
+      {
+        "id": "bbaa79ab-f705-452f-a012-b96fd7349cd4",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:41:15.813497Z",
+        "read": false
+      },
+      {
+        "id": "824cf6d4-c869-4c5b-8d57-d2a35302113f",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:41:15.858169Z",
+        "read": false
+      },
+      {
+        "id": "751b676d-4c47-41be-8e59-90485cb47e7f",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:41:15.907504Z",
+        "read": false
+      },
+      {
+        "id": "7f828047-201e-4879-a52b-397f3cd867d4",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:41:15.986787Z",
+        "read": false
+      },
+      {
+        "id": "d2a273ed-3cae-4fc2-8962-bf86874f2948",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:41:16.089052Z",
+        "read": false
+      },
+      {
+        "id": "2f6d25e7-e9b5-4d5f-a07c-297658ed9c03",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:41:16.153707Z",
+        "read": false
+      },
+      {
+        "id": "2fc5b0dc-3fff-40aa-9231-54592cdaba98",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:41:19.863739Z",
+        "read": false
+      },
+      {
+        "id": "809e3670-108c-4d4e-ab9e-8a7eb14105a7",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:41:21.181463Z",
+        "read": false
+      },
+      {
+        "id": "de39058f-6c5e-4c6e-9f22-96210cb16511",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:41:21.221950Z",
+        "read": false
+      },
+      {
+        "id": "f68ddb8e-a718-42ce-9aa1-c119de253522",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:41:21.285496Z",
+        "read": false
+      },
+      {
+        "id": "d2918b86-94ce-4393-90fe-d81fccb60943",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:41:21.385392Z",
+        "read": false
+      },
+      {
+        "id": "d08a7739-5aa3-4de2-8ebe-2c21c5b26c93",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:41:21.429589Z",
+        "read": false
+      },
+      {
+        "id": "1d165d59-bccc-4b86-8e78-801c84a3937d",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:41:21.469324Z",
+        "read": false
+      },
+      {
+        "id": "56f36845-ec38-4685-b97c-cc171e674d67",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:41:21.567387Z",
+        "read": false
+      },
+      {
+        "id": "ed2c9f56-e113-469c-904c-405922d6e39b",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:41:25.645586Z",
+        "read": false
+      },
+      {
+        "id": "55082f71-9258-4302-a64a-10999970c434",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:41:26.513978Z",
+        "read": false
+      },
+      {
+        "id": "1cc73569-0f27-4bad-8cd7-cf7259802cb1",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:41:26.550082Z",
+        "read": false
+      },
+      {
+        "id": "44784a64-8541-4e31-86f0-cb11e4d8ab95",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:41:26.617331Z",
+        "read": false
+      },
+      {
+        "id": "245e7858-e329-4f3c-b586-fd4b173801ed",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:41:26.679041Z",
+        "read": false
+      },
+      {
+        "id": "c3c0af56-255c-4355-8ef9-e577e4a31d7e",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:41:26.721953Z",
+        "read": false
+      },
+      {
+        "id": "d226fad8-9380-4d31-8ba2-734b9e0e4616",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:41:26.758010Z",
+        "read": false
+      },
+      {
+        "id": "5f78006a-ae20-48de-aa4f-d8f0e7faa418",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:41:26.855366Z",
+        "read": false
+      },
+      {
+        "id": "02fe2e4b-5c0e-4e14-b94f-940179fe4cde",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:41:30.718386Z",
+        "read": false
+      },
+      {
+        "id": "3eecb3de-e766-41fb-acdc-ac9f2fa7ec6c",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:41:31.890571Z",
+        "read": false
+      },
+      {
+        "id": "3a8e1d3c-8825-4862-8248-92de604f519a",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:41:31.937346Z",
+        "read": false
+      },
+      {
+        "id": "9fb79ef2-d640-48b7-91b2-10f6ae7427e0",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:41:31.975917Z",
+        "read": false
+      },
+      {
+        "id": "95eb7cf1-c8fd-4534-a8f2-dc787e652aa6",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:41:32.020465Z",
+        "read": false
+      },
+      {
+        "id": "03cf949b-efb1-42b3-a659-6c6c6db8797d",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:41:32.062963Z",
+        "read": false
+      },
+      {
+        "id": "2e9552a3-5701-4168-83bf-f0c125bc278e",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:41:32.113339Z",
+        "read": false
+      },
+      {
+        "id": "01b515fe-14ca-461c-8e56-938d1de10445",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:41:32.160797Z",
+        "read": false
+      },
+      {
+        "id": "882672ac-2278-47ee-b3d7-20559a901046",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:41:37.227596Z",
+        "read": false
+      },
+      {
+        "id": "da02de8a-2350-4774-ac8b-a99cda50475f",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:41:37.263018Z",
+        "read": false
+      },
+      {
+        "id": "e46984d7-8086-4a35-8b71-0bb69882ecdd",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:42:53.262951Z",
+        "read": false
+      },
+      {
+        "id": "998c69e9-a500-4db4-aeee-019cbb4189d4",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:42:53.313700Z",
+        "read": false
+      },
+      {
+        "id": "babaf18d-69ee-4a56-96e2-3bedafa2ac9b",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:42:53.330902Z",
+        "read": false
+      },
+      {
+        "id": "fbfddeb1-6b5d-44f3-9714-edc1741a8936",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:42:53.350616Z",
+        "read": false
+      },
+      {
+        "id": "524e4031-a9d9-46ce-887c-c5867b0270a1",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:42:53.370055Z",
+        "read": false
+      },
+      {
+        "id": "a0209f9c-e0d4-4508-b71f-fcacfe94bedc",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:42:53.397796Z",
+        "read": false
+      },
+      {
+        "id": "7580ddc9-420a-4fc3-b2f2-1f73128e3541",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:42:53.430681Z",
+        "read": false
+      },
+      {
+        "id": "b6545c85-a2eb-4d61-845f-b8b745229469",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:42:53.461817Z",
+        "read": false
+      },
+      {
+        "id": "d115e6dc-4a25-4566-8b20-67407ce74765",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:42:56.894701Z",
+        "read": false
+      },
+      {
+        "id": "1be5ea07-dc0b-4a39-912d-3e5e4616360d",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:42:58.522172Z",
+        "read": false
+      },
+      {
+        "id": "85d9f0bf-eb41-43b9-8d67-50ebd9c30a80",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:42:58.560665Z",
+        "read": false
+      },
+      {
+        "id": "8b8d591e-105d-4e3b-b9bb-d5c5653af66c",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:42:58.597750Z",
+        "read": false
+      },
+      {
+        "id": "dcd7bde2-d941-46dd-a204-8f7f0ab63833",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:42:58.676384Z",
+        "read": false
+      },
+      {
+        "id": "cd7067d7-1ea9-459e-8957-899f7d0554c3",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:42:58.733084Z",
+        "read": false
+      },
+      {
+        "id": "6092d72e-4eab-4e57-a3d1-acb144e7cb2b",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:42:58.765742Z",
+        "read": false
+      },
+      {
+        "id": "3ef64af3-f913-4660-8b27-1eacd8b5148c",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:42:58.832345Z",
+        "read": false
+      },
+      {
+        "id": "313b3f61-fa9b-46cc-9734-24bd9502e0c4",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:03.497780Z",
+        "read": false
+      },
+      {
+        "id": "6c97896a-f45c-4377-9b1f-ea6b89d25469",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:03.528595Z",
+        "read": false
+      },
+      {
+        "id": "921cb760-131e-485c-9183-2f026737a96e",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:03.566570Z",
+        "read": false
+      },
+      {
+        "id": "5b0e8bcc-34fe-47fe-80a9-28a38da389dc",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:03.618055Z",
+        "read": false
+      },
+      {
+        "id": "6556bf93-2019-4e92-aa8e-935fc7d01745",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:03.692035Z",
+        "read": false
+      },
+      {
+        "id": "b3011e9d-16a1-4fab-ac33-25a2f5ea87c7",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:03.728859Z",
+        "read": false
+      },
+      {
+        "id": "81256c7e-da48-4f86-9a69-335c0a765fa6",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:03.770752Z",
+        "read": false
+      },
+      {
+        "id": "da7ffa8b-1032-4742-bf2f-dec353bd20c7",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:03.812748Z",
+        "read": false
+      },
+      {
+        "id": "71d9c6e2-c242-4f2f-8cc8-1014f3d436b4",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:07.332872Z",
+        "read": false
+      },
+      {
+        "id": "6294519e-0ad6-429e-91d2-de01eb690c42",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:08.584355Z",
+        "read": false
+      },
+      {
+        "id": "d9328285-eae0-4b39-8acf-b7b9f641a33d",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:08.618997Z",
+        "read": false
+      },
+      {
+        "id": "1add83b6-8ac6-4671-af46-e77da66dc693",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:08.658057Z",
+        "read": false
+      },
+      {
+        "id": "67e8eca7-da01-43a6-8689-b255e3e3ce51",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:08.713031Z",
+        "read": false
+      },
+      {
+        "id": "02293078-7802-41d8-b998-e024287002e3",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:08.753647Z",
+        "read": false
+      },
+      {
+        "id": "868a823d-2b13-4da1-90fd-0594172e9373",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:08.809590Z",
+        "read": false
+      },
+      {
+        "id": "f4082343-0c30-4111-8fe4-d5a2b0ce4d81",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:08.854132Z",
+        "read": false
+      },
+      {
+        "id": "0e2fada3-4d5c-426a-b794-9ffc3ea2eb46",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:11.900677Z",
+        "read": false
+      },
+      {
+        "id": "39ee026a-82aa-498f-b7e7-c016537dfae1",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:13.759799Z",
+        "read": false
+      },
+      {
+        "id": "29107a36-3081-41ce-8934-1652a5f4015c",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:13.796777Z",
+        "read": false
+      },
+      {
+        "id": "94d73da9-9d4c-4724-9d0a-7a1353426188",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:13.831160Z",
+        "read": false
+      },
+      {
+        "id": "9425f279-adfe-48cd-afb6-46bc6cc7ccb6",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:13.884090Z",
+        "read": false
+      },
+      {
+        "id": "c2b4d0d6-b6e9-4ef8-a89a-2ee73ea8963c",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:13.934731Z",
+        "read": false
+      },
+      {
+        "id": "b17e3397-707c-4916-9487-0b1b84ce6c65",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:13.976980Z",
+        "read": false
+      },
+      {
+        "id": "87a09ac2-a022-425c-8ce5-8f0f66bf99c5",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:14.012213Z",
+        "read": false
+      },
+      {
+        "id": "880ab637-8350-48bf-b8fd-9c7155fc27fb",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:15.390825Z",
+        "read": false
+      },
+      {
+        "id": "044e29d3-d7c2-4d3b-a523-1ade719c1c5a",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:18.968945Z",
+        "read": false
+      },
+      {
+        "id": "a134f75b-7597-4f62-825a-ee3d6ede1989",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:19.005408Z",
+        "read": false
+      },
+      {
+        "id": "f80cab43-6249-4d06-acfd-893788a9becc",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:19.040040Z",
+        "read": false
+      },
+      {
+        "id": "cda7f225-1e58-44a2-89eb-23021a19cb0d",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:19.073218Z",
+        "read": false
+      },
+      {
+        "id": "f51121af-62f3-4f3f-86c0-8dde7e835824",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:19.109484Z",
+        "read": false
+      },
+      {
+        "id": "8c0f8401-9c5f-4487-88ce-b025a74253cb",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:19.148931Z",
+        "read": false
+      },
+      {
+        "id": "4a5691f2-f23c-495c-add1-f454fbfcd7dc",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:19.209706Z",
+        "read": false
+      },
+      {
+        "id": "0c76080a-0c49-44a5-b74a-5ada8f3bbca8",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:23.547339Z",
+        "read": false
+      },
+      {
+        "id": "23d561ed-b82b-4b86-b199-f6fc3389a035",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:24.252272Z",
+        "read": false
+      },
+      {
+        "id": "7cde0054-96ce-424f-b598-853650832450",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:24.290249Z",
+        "read": false
+      },
+      {
+        "id": "ed23bcbc-dbfc-4de0-88e9-d88693e57648",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:24.329368Z",
+        "read": false
+      },
+      {
+        "id": "a587cb59-87a0-43f2-8226-a3471d2293b7",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:24.375647Z",
+        "read": false
+      },
+      {
+        "id": "ad846a6a-6367-40e5-b26a-29cbe1cb02b5",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:24.466636Z",
+        "read": false
+      },
+      {
+        "id": "05c2423b-cc0a-4c3c-a14b-7d3356469ac2",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:24.534966Z",
+        "read": false
+      },
+      {
+        "id": "23ca19cc-5070-46d5-ac92-358ec4e9aba7",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:24.626198Z",
+        "read": false
+      },
+      {
+        "id": "e25c6c22-3be5-4190-8951-b7f791d22e6d",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:27.882919Z",
+        "read": false
+      },
+      {
+        "id": "009207da-3170-4055-ba50-1c97ba43cc11",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:29.504249Z",
+        "read": false
+      },
+      {
+        "id": "ccd60f24-74b5-42e7-b0cc-cccee05defc0",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:29.546042Z",
+        "read": false
+      },
+      {
+        "id": "72c74264-ad98-4461-ac2d-5d83e5197890",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:29.589509Z",
+        "read": false
+      },
+      {
+        "id": "cc965fc5-e3f2-4cc2-9156-edd6657ca3b8",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:29.633722Z",
+        "read": false
+      },
+      {
+        "id": "6df5792a-e646-4479-a7d7-33488d8498ba",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:29.693610Z",
+        "read": false
+      },
+      {
+        "id": "279b6e23-6e1d-4cb1-b162-f9e3818c84d5",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:29.746896Z",
+        "read": false
+      },
+      {
+        "id": "7b4694ed-d967-42b7-8976-076bf4ac3b4a",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:29.807125Z",
+        "read": false
+      },
+      {
+        "id": "e5478363-e007-45f2-8432-7db09cec5ebe",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:33.441796Z",
+        "read": false
+      },
+      {
+        "id": "21cf8d18-cd8e-4011-ba6e-1b5662fe3c09",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:34.770383Z",
+        "read": false
+      },
+      {
+        "id": "d9edc196-6563-472b-af2a-74c02ae74245",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:34.807431Z",
+        "read": false
+      },
+      {
+        "id": "1432fe4f-f9c0-4d47-ae58-6a1e708652ef",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:34.851785Z",
+        "read": false
+      },
+      {
+        "id": "febf527d-cb7e-4d06-a98e-ff14f9f352b9",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:34.937774Z",
+        "read": false
+      },
+      {
+        "id": "1175583d-795f-49a5-9535-56c4f063996d",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:34.979440Z",
+        "read": false
+      },
+      {
+        "id": "1c2e91e6-0467-45ed-bf44-6b5245540578",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:35.037769Z",
+        "read": false
+      },
+      {
+        "id": "699b8993-27bf-468e-b0f6-0f59c8a60440",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:35.083315Z",
+        "read": false
+      },
+      {
+        "id": "3c03c06c-f38e-43be-a2f3-13bc9a11e6a1",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:39.874005Z",
+        "read": false
+      },
+      {
+        "id": "d4a0cb33-f4fe-440e-969e-d462130556a7",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:39.915601Z",
+        "read": false
+      },
+      {
+        "id": "5702ed77-874f-489d-9a21-9f5eebcb1c3f",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:39.955279Z",
+        "read": false
+      },
+      {
+        "id": "770a9d68-2d3e-426d-8f58-a7767169ac9e",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:40.017484Z",
+        "read": false
+      },
+      {
+        "id": "1457ffb5-f88e-4cb0-9e00-87e388418540",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:40.094712Z",
+        "read": false
+      },
+      {
+        "id": "cc90ac58-7e4e-4a95-a491-9910aa079877",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:40.136889Z",
+        "read": false
+      },
+      {
+        "id": "ddfb21ab-a041-4f85-9bfc-651eb174d7a7",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:40.181830Z",
+        "read": false
+      },
+      {
+        "id": "f6b56f55-b0d3-4676-ac24-c3d1df5ad351",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:40.274512Z",
+        "read": false
+      },
+      {
+        "id": "96a6fd86-e7f1-4d4b-b570-e9c113f504c4",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:43.499076Z",
+        "read": false
+      },
+      {
+        "id": "b78b32af-90d6-4e5c-804f-14398db17571",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:44.980945Z",
+        "read": false
+      },
+      {
+        "id": "fcd7b67e-b0cf-49fb-98a2-47ad727616dd",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:45.021556Z",
+        "read": false
+      },
+      {
+        "id": "d0e128bd-d5ec-477c-b911-ba33345c2cd0",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:45.060548Z",
+        "read": false
+      },
+      {
+        "id": "b5bb3ebb-19db-4cb6-9994-49cae4e33def",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:45.152269Z",
+        "read": false
+      },
+      {
+        "id": "b5920cb6-bd5d-4c9a-84b5-49a70fe2923a",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:45.201551Z",
+        "read": false
+      },
+      {
+        "id": "6ed0d56f-41e4-498f-ac19-58655b6cebc2",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:45.233573Z",
+        "read": false
+      },
+      {
+        "id": "6584b52b-78f4-4125-83dd-be96b7142bc1",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:45.282766Z",
+        "read": false
+      },
+      {
+        "id": "74f49563-a261-41a9-a011-b9c68fa3df68",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:49.352297Z",
+        "read": false
+      },
+      {
+        "id": "6f504ad8-dfcd-485c-9407-a44ddfb1063a",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:50.157035Z",
+        "read": false
+      },
+      {
+        "id": "c4e56cbf-e332-4341-9879-b0457a40a6df",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:50.199277Z",
+        "read": false
+      },
+      {
+        "id": "99a20f7c-986f-4ad6-8df0-a760976a4477",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:50.240958Z",
+        "read": false
+      },
+      {
+        "id": "6a7f6281-a65b-498b-b32c-3342f9b3962c",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:50.292344Z",
+        "read": false
+      },
+      {
+        "id": "fd57d562-2efe-4971-8b3e-d28d02c635bf",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:50.360516Z",
+        "read": false
+      },
+      {
+        "id": "2c0d41f1-0733-4ac5-8efb-48b0d2d4d1d4",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:50.413026Z",
+        "read": false
+      },
+      {
+        "id": "ba3126f2-dfa6-4710-b2d2-77c4f6d22109",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:50.457736Z",
+        "read": false
+      },
+      {
+        "id": "be2218e1-6ab1-495d-b652-cb1a225b1de7",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:53.452710Z",
+        "read": false
+      },
+      {
+        "id": "426f2332-df61-4089-8f2b-0ab5ec06d1b5",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:55.361507Z",
+        "read": false
+      },
+      {
+        "id": "a5f08e3c-da9d-4ff5-85f7-883ae872c1a6",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:55.396407Z",
+        "read": false
+      },
+      {
+        "id": "05d2b9a0-a05a-4eed-b789-dabe574ea2d2",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:55.441448Z",
+        "read": false
+      },
+      {
+        "id": "c0b58912-7863-473f-b357-3b0d69e8cdfc",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:55.488356Z",
+        "read": false
+      },
+      {
+        "id": "da7a0fb0-38d1-4a26-b322-1b52eefdf1da",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:55.535726Z",
+        "read": false
+      },
+      {
+        "id": "a4cbcf1d-f528-4591-9b58-ba82faea7e91",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:55.575007Z",
+        "read": false
+      },
+      {
+        "id": "1dded4b6-a42d-4ec6-800f-a8124ef1864f",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:55.630022Z",
+        "read": false
+      },
+      {
+        "id": "ec5ef475-c709-43a3-a508-0c8096acd79e",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:43:57.004728Z",
+        "read": false
+      },
+      {
+        "id": "e64b7b2a-fde1-4eca-887c-19f68a0ed94e",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:44:00.547276Z",
+        "read": false
+      },
+      {
+        "id": "0a858aa6-09b7-43bd-8ee8-9d434e718926",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:44:00.581128Z",
+        "read": false
+      },
+      {
+        "id": "777ad1f9-5813-4768-96f0-5dcc45861d8b",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:44:00.619238Z",
+        "read": false
+      },
+      {
+        "id": "9aaf7384-8ced-4c3e-9d3d-4d6f9e5de432",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:44:00.655526Z",
+        "read": false
+      },
+      {
+        "id": "7118517f-437e-4494-ad94-c2da7ef38768",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:44:00.690217Z",
+        "read": false
+      },
+      {
+        "id": "158d0fd7-cd4f-4b8c-884f-ef686e466b3b",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:44:00.740056Z",
+        "read": false
+      },
+      {
+        "id": "cd2c0e36-0e8b-4782-8cd2-2e6cf591a0cf",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:44:00.775691Z",
+        "read": false
+      },
+      {
+        "id": "25b5f41a-8d0b-4e77-b507-88867493afdf",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:44:04.434405Z",
+        "read": false
+      },
+      {
+        "id": "9515c9b5-864d-48b2-8c95-6228c620457e",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:44:05.746923Z",
+        "read": false
+      },
+      {
+        "id": "a7df275f-b525-46bd-81d9-b7898402b8c6",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:44:05.785357Z",
+        "read": false
+      },
+      {
+        "id": "7730751b-5f1a-4167-b997-d3f1a9dfcd35",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:44:05.852462Z",
+        "read": false
+      },
+      {
+        "id": "f359a0ac-efde-4d71-8007-ce154f707a27",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:44:05.926349Z",
+        "read": false
+      },
+      {
+        "id": "54d6271e-9510-4d34-a90e-3ef5239ae68f",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:44:05.960005Z",
+        "read": false
+      },
+      {
+        "id": "55532bf9-c163-4013-86e2-50a6d970d251",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:44:06.007740Z",
+        "read": false
+      },
+      {
+        "id": "d583338a-d270-4a60-94d6-f64a8c64d3cb",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:44:06.060516Z",
+        "read": false
+      },
+      {
+        "id": "dfc7a44d-bf69-48fa-8865-59b317fa8f0c",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:44:09.689152Z",
+        "read": false
+      },
+      {
+        "id": "26330d29-0d04-41c9-8ea6-544dd9f7b7c6",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:44:11.022283Z",
+        "read": false
+      },
+      {
+        "id": "c14ebaa8-4f07-4339-8dcb-f23ba9adbfc7",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:44:11.061409Z",
+        "read": false
+      },
+      {
+        "id": "585207bf-620e-410c-a052-098af655062f",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:44:11.124891Z",
+        "read": false
+      },
+      {
+        "id": "589787ff-b035-4df4-9405-1688e0399865",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:44:11.185370Z",
+        "read": false
+      },
+      {
+        "id": "40e4762c-5731-4a9f-a518-5946e8ce1789",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:44:11.224921Z",
+        "read": false
+      },
+      {
+        "id": "295c1fb9-f079-4724-b22a-e9818042c508",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:44:11.267213Z",
+        "read": false
+      },
+      {
+        "id": "556b7568-e5f5-4fa1-9954-b908818aab79",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:44:11.328764Z",
+        "read": false
+      },
+      {
+        "id": "000d42d5-cecc-404c-a973-739fc671f53d",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:44:14.539944Z",
+        "read": false
+      },
+      {
+        "id": "81ae0828-982c-4eac-89b5-1ef703cd4bd4",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:44:16.285916Z",
+        "read": false
+      },
+      {
+        "id": "ac2390e0-3856-4819-886e-84da47fcabc4",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:44:16.350916Z",
+        "read": false
+      },
+      {
+        "id": "0cea5824-5860-4c0d-8634-c66ce5bae2ca",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:44:16.426470Z",
+        "read": false
+      },
+      {
+        "id": "fcb1c4aa-4be1-44a5-adad-89941c8990c9",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:44:16.482211Z",
+        "read": false
+      },
+      {
+        "id": "4ce15c58-1629-4613-b554-7322e7d5f5b5",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:44:16.533521Z",
+        "read": false
+      },
+      {
+        "id": "c6c556e7-410b-444e-be4d-a078cb1b5d7e",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:44:16.581895Z",
+        "read": false
+      },
+      {
+        "id": "ae8c549d-97fb-42f7-9321-e04963d701d0",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:44:16.622394Z",
+        "read": false
+      },
+      {
+        "id": "b4d21adf-4fe4-4397-880f-29d1877b1683",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:44:20.283274Z",
+        "read": false
+      },
+      {
+        "id": "ccbdf726-059b-4b63-8e07-2a1e73f9ae5f",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:44:21.867287Z",
+        "read": false
+      },
+      {
+        "id": "f983c5b4-ecc9-45c7-969a-1cbfee4d31e8",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:44:21.905553Z",
+        "read": false
+      },
+      {
+        "id": "3b8ed3b7-a771-4405-bb7e-dbc90cb5d1e5",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:44:21.947192Z",
+        "read": false
+      },
+      {
+        "id": "935a7992-c70a-4b1a-8d5a-1ba2a26d4d27",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:44:21.994023Z",
+        "read": false
+      },
+      {
+        "id": "892dbb87-eff6-461e-9147-8c6697055f8a",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:44:22.034289Z",
+        "read": false
+      },
+      {
+        "id": "abdda518-5a51-4bee-90c9-91814c501067",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:44:22.075673Z",
+        "read": false
+      },
+      {
+        "id": "accc31f9-5e3b-4713-bb7b-8b2381bb9c8d",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:44:22.130449Z",
+        "read": false
+      },
+      {
+        "id": "0debfe95-5d3e-4584-8c24-20326e74ae12",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:44:26.037537Z",
+        "read": false
+      },
+      {
+        "id": "ec3a5f09-aeb1-4e6d-b410-19c372414b5d",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:44:27.765973Z",
+        "read": false
+      },
+      {
+        "id": "5f9cbdc8-0a7d-4ce0-8513-7b0c9032d885",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:44:27.813860Z",
+        "read": false
+      },
+      {
+        "id": "755a9c35-35a6-4e35-8fca-d1683904890d",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:44:27.861901Z",
+        "read": false
+      },
+      {
+        "id": "26f2b8ac-f0d3-4bb4-b814-7edab5b57c97",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:44:27.912888Z",
+        "read": false
+      },
+      {
+        "id": "4d0bbee7-339b-474a-97bf-df51fc915843",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:44:27.998971Z",
+        "read": false
+      },
+      {
+        "id": "dbdf217e-77cb-405a-b7f8-dd1c9dde2d04",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:44:28.042334Z",
+        "read": false
+      },
+      {
+        "id": "d9e0351d-9637-405c-b65c-97c716491a5d",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:44:28.109119Z",
+        "read": false
+      },
+      {
+        "id": "660773a1-9da1-480d-b17a-8569d7e0b67f",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:44:31.322004Z",
+        "read": false
+      },
+      {
+        "id": "a39b5056-e6ff-4887-86a5-6117cf130af0",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:44:33.417551Z",
+        "read": false
+      },
+      {
+        "id": "e2d1e289-4e31-44a6-9fa8-b827ba9d4421",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:44:33.459163Z",
+        "read": false
+      },
+      {
+        "id": "3bd0f895-8317-4400-afd4-00099be56f2e",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:45:15.334482Z",
+        "read": false
+      },
+      {
+        "id": "1078e14d-5c44-415e-a188-47076f9aca9e",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:45:16.388589Z",
+        "read": false
+      },
+      {
+        "id": "4cf89430-7fcc-414a-948c-014538d357f1",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:45:17.414161Z",
+        "read": false
+      },
+      {
+        "id": "ed093a7a-0868-42d3-bd7c-af74ac6d7b0b",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:45:18.441847Z",
+        "read": false
+      },
+      {
+        "id": "0686ffe9-376c-4e31-87a7-5888a738b008",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:45:19.466977Z",
+        "read": false
+      },
+      {
+        "id": "4b030495-2f0b-4476-a29b-4fbd06e4191b",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:45:20.506867Z",
+        "read": false
+      },
+      {
+        "id": "bb51b928-6507-4737-a23d-473ce606ba77",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:45:21.538988Z",
+        "read": false
+      },
+      {
+        "id": "be5b6b3e-9b55-4048-8617-78ff72310915",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:45:22.564998Z",
+        "read": false
+      },
+      {
+        "id": "bdabc32d-ab70-47c2-8727-631c404ff32f",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:45:23.590441Z",
+        "read": false
+      },
+      {
+        "id": "4d9ffacd-0b5f-42a0-b274-d8bb92eb7fd2",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:45:24.623132Z",
+        "read": false
+      },
+      {
+        "id": "872112b6-ead8-407f-a19d-c1a30ac2e932",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:46:01.781354Z",
+        "read": false
+      },
+      {
+        "id": "574cc085-0700-4fad-81e1-e21cf9c6d05a",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:46:02.837978Z",
+        "read": false
+      },
+      {
+        "id": "4d89a611-c15d-45bd-a459-791c4e85fde4",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:46:03.869958Z",
+        "read": false
+      },
+      {
+        "id": "23d317d4-d149-47bd-b714-bc0925a98a13",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:46:04.899202Z",
+        "read": false
+      },
+      {
+        "id": "be426752-6a40-46b8-9f71-609191d6aa1d",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:46:05.929652Z",
+        "read": false
+      },
+      {
+        "id": "332a5989-75f2-4fdc-b36a-4ab6526a1123",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:46:06.956278Z",
+        "read": false
+      },
+      {
+        "id": "1206ceb4-ad16-4f15-8e6d-d1285308df65",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:46:07.992893Z",
+        "read": false
+      },
+      {
+        "id": "09f3b1dd-4d21-4890-a9d1-676c55bc9255",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:46:09.023393Z",
+        "read": false
+      },
+      {
+        "id": "6c0e8b24-8b78-4fed-af11-ef2ec7f6ce1a",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:46:10.055777Z",
+        "read": false
+      },
+      {
+        "id": "8d624255-57e1-4c1a-86b8-3c5a3d8f0ee8",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:46:11.094115Z",
+        "read": false
+      },
+      {
+        "id": "1ec85db3-d705-43be-a8df-22f71175f10a",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:46:12.126110Z",
+        "read": false
+      },
+      {
+        "id": "cf0b47cc-19ed-4544-95e2-27ba0d111629",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:46:13.172167Z",
+        "read": false
+      },
+      {
+        "id": "14066a46-2c2e-480b-81f0-6c0ee6011ded",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:46:14.207980Z",
+        "read": false
+      },
+      {
+        "id": "8138d503-bd13-40c1-a77c-46aad40fc969",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:46:15.252110Z",
+        "read": false
+      },
+      {
+        "id": "15d8ca48-8123-4bf7-954a-922428eb31e5",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:46:16.285565Z",
+        "read": false
+      },
+      {
+        "id": "bddff7e9-d795-4656-aad4-8bb8b166bfc3",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:46:17.329239Z",
+        "read": false
+      },
+      {
+        "id": "dae2140d-4ca9-4e48-b980-2caac37af116",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:46:18.357743Z",
+        "read": false
+      },
+      {
+        "id": "a92b6a00-8144-43cc-9ae2-fbd6dfef0ff2",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:46:19.406082Z",
+        "read": false
+      },
+      {
+        "id": "8f2ead8f-9abc-4593-adf1-52c5f90de713",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:46:20.443905Z",
+        "read": false
+      },
+      {
+        "id": "6a13bb0b-1468-4760-9923-835c6049134c",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:54:15.337338Z",
+        "read": false
+      },
+      {
+        "id": "3c7f04f1-e67a-4aa1-b65f-ca0e44380295",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:54:16.387719Z",
+        "read": false
+      },
+      {
+        "id": "0e6f1d44-02b3-4f71-97aa-462e65aa30ee",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:54:17.403213Z",
+        "read": false
+      },
+      {
+        "id": "1c61a49e-2ab3-477d-add7-9fd91f6ec8dd",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:54:18.435650Z",
+        "read": false
+      },
+      {
+        "id": "e1d6a6f6-f45f-47ff-b6bb-1cae31062e6f",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:55:02.053443Z",
+        "read": false
+      },
+      {
+        "id": "697f6cbf-658f-46fd-a0be-2b47884eb473",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:59:58.826835Z",
+        "read": false
+      },
+      {
+        "id": "0a7587e1-bc78-4d39-a2e0-e90f503dbbaf",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T13:59:59.878022Z",
+        "read": false
+      },
+      {
+        "id": "696310a7-4d8a-426f-965a-eef25bc541d0",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T14:00:00.908618Z",
+        "read": false
+      },
+      {
+        "id": "4cb6c9d8-ff46-4ad9-9a59-79ba4b805bc9",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T14:00:01.943515Z",
+        "read": false
+      },
+      {
+        "id": "80e04f6f-92f4-415c-b6a8-91f329e60795",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T14:00:02.967261Z",
+        "read": false
+      },
+      {
+        "id": "2c1a5d16-afaa-4c6c-9d4d-cc2d9f493881",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T14:00:04.004662Z",
+        "read": false
+      },
+      {
+        "id": "ec194b00-1edd-434d-8a24-93b0ef5e4fce",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T14:00:05.023428Z",
+        "read": false
+      },
+      {
+        "id": "7342fea6-478e-43a2-82be-fa7d5ea24db6",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T14:00:06.053263Z",
+        "read": false
+      },
+      {
+        "id": "565dbfda-aa34-419f-ad34-88f110e00a36",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T14:00:07.076579Z",
+        "read": false
+      },
+      {
+        "id": "24df8f36-6a36-4a4b-ace8-f23510a2454d",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T14:00:08.114649Z",
+        "read": false
+      },
+      {
+        "id": "d8b5caef-c7e7-4fe2-880f-c755b46c6b25",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T14:00:09.147456Z",
+        "read": false
+      },
+      {
+        "id": "0f0445f1-26d1-4f8d-9d96-c8bee5b1c47d",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T14:00:10.169137Z",
+        "read": false
+      },
+      {
+        "id": "cff2b7d5-cb8e-42ab-a765-4900e5e3a17c",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T14:00:11.202230Z",
+        "read": false
+      },
+      {
+        "id": "6627766d-c51d-4488-b2d9-74b14eafac5b",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T14:00:12.250150Z",
+        "read": false
+      },
+      {
+        "id": "bdcc439a-0bd4-4fb7-b9bb-1d4f01171728",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T14:00:13.280137Z",
+        "read": false
+      },
+      {
+        "id": "3da4e166-4ea0-4651-975f-6368bcdd397a",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T14:00:14.317177Z",
+        "read": false
+      },
+      {
+        "id": "38d259b4-ce24-4970-bbb3-4fde7ce3a0ec",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T14:02:11.219239Z",
+        "read": false
+      },
+      {
+        "id": "81ca30d2-3b7b-4e89-9acf-8fbb4a31b461",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T14:02:16.376765Z",
+        "read": false
+      },
+      {
+        "id": "6211e552-78cc-40a6-9c48-f4e088e68aa2",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T14:03:07.041481Z",
+        "read": false
+      },
+      {
+        "id": "7adf25ac-7f18-46d9-848c-fbe7a461cb59",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T14:03:17.153415Z",
+        "read": false
+      },
+      {
+        "id": "74cdad4d-419f-42bc-afe8-64ad99704c86",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T14:03:29.308259Z",
+        "read": false
+      },
+      {
+        "id": "6c686314-8745-41e4-a02e-a3c1068b8be5",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T14:03:37.441339Z",
+        "read": false
+      },
+      {
+        "id": "043d3b09-ab07-42b4-8d97-d0fbb0ca969d",
+        "message": "No human detected on driver camera 'umi' for 3s",
+        "created_at": "2026-02-25T14:03:44.991109Z",
+        "read": false
       }
     ],
-    "driver_timeout_seconds": 10
+    "driver_timeout_seconds": 3
   }
 }
