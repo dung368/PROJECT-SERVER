@@ -4,3 +4,4 @@ python-jose
 opencv-python
 ultralytics
 google-api-python-client
+bcrypt==3.7.0
