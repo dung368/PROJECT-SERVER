@@ -202,7 +202,7 @@ def _run_worker(username: str, camera_id: str, url: str, stop_event: threading.E
                     if now - last_mark >= LAST_SEEN_COOLDOWN:
                         last_mark = now
                         try:
-                            callback(username, camera_id)
+                            callback(username=username,camera_id=camera_id)
                         except Exception:
                             traceback.print_exc()
 

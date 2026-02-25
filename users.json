@@ -18,12 +18,12 @@
     "num_cams": 1,
     "cameras": [
       {
-        "camera_id": "7c3c2397-94be-4b0a-acb0-bab84a3a668c",
-        "name": "ddx",
+        "camera_id": "d9a3a2ca-3284-4174-b3e6-4d376a7ad6a7",
+        "name": "cccc",
         "url": "http://192.168.1.52:8888/nai-cam0/index.m3u8",
-        "created_at": "2026-02-25T07:45:50.349437Z",
+        "created_at": "2026-02-25T08:41:12.682551Z",
         "is_driver": true,
-        "last_human_seen": "2026-02-25T07:53:44.657733Z",
+        "last_human_seen": "2026-02-25T09:38:48.613357Z",
         "missing_notified": false
       }
     ],
@@ -171,67 +171,5 @@
       }
     ],
     "driver_timeout_seconds": 10
-  },
-  "dun": {
-    "user_id": "4842d30d-ac2f-462c-bdeb-9f577936f825",
-    "username": "dun",
-    "full_name": null,
-    "email": null,
-    "hashed_password": "$2b$12$gjlqZh2p0RdykKqGwbXriOK3Me4nFahmIoZHOI2tgoHGH4UxiN1YK",
-    "disabled": false,
-    "num_cams": 5,
-    "cameras": [
-      {
-        "camera_id": "e2a67647-09ef-44ef-beba-227ed3c680ab",
-        "name": "x",
-        "url": "rtsp://192.168.2.221:8554",
-        "created_at": "2026-02-04T12:09:20.801052Z"
-      },
-      {
-        "camera_id": "3b8dea54-99cc-428d-84e8-a7a6b83c9f0c",
-        "name": "y",
-        "url": "rtsp://192.168.2.221:8554",
-        "created_at": "2026-02-04T12:11:02.672393Z"
-      },
-      {
-        "camera_id": "08d0b9d5-e631-42c5-b32d-f750f483f811",
-        "name": "z",
-        "url": "rtsp://192.168.2.221:8554/OK.m3u8",
-        "created_at": "2026-02-04T12:43:12.507726Z"
-      },
-      {
-        "camera_id": "0cbb82cf-d9c7-4dc2-8de7-57d5c268a2a2",
-        "name": "z",
-        "url": "http://192.168.2.221:8889",
-        "created_at": "2026-02-04T13:29:44.092630Z"
-      },
-      {
-        "camera_id": "4118e3c5-286a-4bec-a73b-8325df168145",
-        "name": "g",
-        "url": "http://192.168.2.221:8889/OK.m3u8",
-        "created_at": "2026-02-04T13:30:17.972512Z"
-      }
-    ]
-  },
-  "nai2": {
-    "user_id": "7318505d-3d51-4c49-a565-fa4aead30ad5",
-    "username": "nai2",
-    "hashed_password": "$2b$12$EjyKuJK0LE1tUQa8zY6GR.FrA5MeqwSg6krpmiQs/d5P8IlKXYTg6",
-    "num_cams": 1,
-    "cameras": [
-      {
-        "camera_id": "d128d847-56be-4c77-9466-19510fc571c4",
-        "name": "nai",
-        "url": "rtsp://192.168.1.165",
-        "created_at": "2026-02-22T03:00:29.983866Z",
-        "is_driver": false,
-        "last_human_seen": null,
-        "missing_notified": false
-      }
-    ],
-    "notifications": [],
-    "fcm_tokens": [
-      "c8r2qrweTQqfAZSgEkxlev:APA91bENLs7cXM3fyxwt5F-rtkwshfzuy5lSbcb37TZLU0RsS5D-Y6bY02DYrd8BbX3cwhFkEYBz9uJd1P0CgukWWvL22E0gAcgdsGkSSBzoyo2weS0utY4"
-    ]
   }
 }

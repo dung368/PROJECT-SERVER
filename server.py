@@ -139,7 +139,7 @@ async def add_camera_to_user(username: str, name: str, url: str) -> dict:
         db[username]["num_cams"] = len(db[username]["cameras"])
         await _write_db(db)
         try:
-            camera_worker.start_worker(username, cam["camera_id"], cam["url"], mark_last_seen_sync)
+            camera_worker.start_worker(username, cam["camera_id"], cam["url"], mark_last_seen_sync,is_driver=cam["is_driver"])
         except Exception:
             pass
         return cam
@@ -619,6 +619,7 @@ async def overlay(username: str = Query(...), cam_index: int = Query(...)):
         username=username,
         camera_id=cam["camera_id"],
         callback=mark_last_seen_sync,  # synchronous callback safe for threads
+        is_driver=cam["is_driver"]
     )
 
     return StreamingResponse(gen, media_type="multipart/x-mixed-replace; boundary=frame")

@@ -6,30 +6,29 @@ import os
 from ultralytics import YOLO
 
 # Load model once (adjust path if needed)
-MODEL_PATH = "best.pt"
-_model = YOLO(MODEL_PATH)
+MODEL_PATH_CHILD = "best.pt"
+MODEL_PATH_DRIVER = "yolo26n.pt"
+child_model = YOLO(MODEL_PATH_CHILD)
+driver_model = YOLO(MODEL_PATH_DRIVER)
+mnames_child = getattr(child_model, "names", None)
+mnames_driver = getattr(driver_model, "names", None)
 
-# Try to load names, falling back to model names if available
-mnames = getattr(_model, "names", None)
-if isinstance(mnames, dict):
-    _names = {int(k): v for k, v in mnames.items()}
-elif isinstance(mnames, list):
-    _names = {i: n for i, n in enumerate(mnames)}
-else:
-    _names = {}
+def get_names(names):
+    if isinstance(names, dict):
+        return {int(k): v for k, v in names.items()}
+    elif isinstance(names, list):
+        return {i: n for i, n in enumerate(names)}
+    else:
+        return {}
+
+child_names = get_names(mnames_child)
+driver_names = get_names(mnames_driver)
 
 # confidence threshold default
 DEFAULT_CONFIDENCE = 0.6
 
-# determine the index of "child" class (case-insensitive)
-_child_class_idx = None
-for k, v in _names.items():
-    try:
-        if str(v).strip().lower() == "child":
-            _child_class_idx = int(k)
-            break
-    except Exception:
-        continue
+child_class_idx = 0
+driver_class_idx = 0
 
 def _is_coroutine_callable(func):
     """Return True if calling func returns a coroutine or if func is an async function."""
@@ -42,6 +41,7 @@ def _is_coroutine_callable(func):
     return False
 
 def gen_img(source,
+            is_driver,
             username: str | None = None,
             camera_id: str | None = None,
             callback=None,
@@ -63,6 +63,27 @@ def gen_img(source,
     Yields:
       multipart JPEG bytes (b'--frame...').
     """
+    def choose_model():
+        if is_driver:
+            return driver_model
+        else:
+            return child_model
+        
+    def choose_class_idx():
+        if is_driver:
+            return driver_class_idx
+        else:
+            return child_class_idx
+
+    def choose_names():
+        if is_driver:
+            return driver_names
+        else:
+            return child_names
+        
+    model = choose_model()
+    class_idx = choose_class_idx()
+    names = choose_names()
     # Open capture (works for webcam index or URL/file)
     try:
         cap = cv2.VideoCapture(source)
@@ -114,7 +135,7 @@ def gen_img(source,
             t0 = time.time()
             # run inference (model returns a Results list)
             try:
-                results = _model(frame)
+                results = model(frame)
             except Exception as e:
                 # inference error — print and continue streaming original frame
                 print("camera_utils: model inference error:", e)
@@ -172,7 +193,7 @@ def gen_img(source,
                             if conf < conf_thresh:
                                 continue
 
-                            label = _names.get(cls_id, str(cls_id))
+                            label = names.get(cls_id, str(cls_id))
 
                             # draw rectangle and label
                             cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 165, 255), 2)
@@ -183,16 +204,9 @@ def gen_img(source,
                             cv2.putText(frame, text, (x1, y1 - 4), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 1)
 
                             # If this detection is a 'child' (by name or by index), call callback
-                            if _child_class_idx is not None and cls_id == _child_class_idx:
+                            if class_idx is not None and cls_id == class_idx:
                                 # schedule callback without blocking
                                 _maybe_call_callback(username, camera_id)
-                            else:
-                                # also support matching by literal name (fallback)
-                                try:
-                                    if str(label).strip().lower() == "child":
-                                        _maybe_call_callback(username, camera_id)
-                                except Exception:
-                                    pass
 
                 # annotate performance on frame (optional small overlay)
                 fps_text = f"Inference: {inference_time:.0f}ms"
