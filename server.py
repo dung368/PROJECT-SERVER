@@ -39,7 +39,7 @@ _FCM_SCOPE = ["https://www.googleapis.com/auth/firebase.messaging"]
 _FCM_V1_ENDPOINT_FMT = "https://fcm.googleapis.com/v1/projects/childmobile-ee6f3/messages:send"
 
 # Driver monitor timeout (seconds). Default 30 minutes (1800s). Change to 10 for testing.
-DRIVER_MISSING_TIMEOUT_SECONDS = int(os.getenv("DRIVER_MISSING_TIMEOUT_SECONDS", 10))
+DEFAULT_DRIVER_TIMEOUT = 1800
 
 # ----- AUTH helpers -----
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
@@ -98,6 +98,7 @@ async def create_user(username: str, password: str) -> dict:
             "cameras": [],
             "notifications": [],
             "fcm_tokens": [],
+            "driver_timeout_seconds": DEFAULT_DRIVER_TIMEOUT,
         }
         db[username] = user
         await _write_db(db)
@@ -357,7 +358,7 @@ async def _driver_monitor_loop():
         try:
             db = await _read_db()
             now = datetime.utcnow()
-            timeout = timedelta(seconds=DRIVER_MISSING_TIMEOUT_SECONDS)
+            timeout = timedelta(seconds=int(u.get("driver_timeout_seconds")))
             for username, u in db.items():
                 for cam in u.get("cameras", []):
                     if not cam.get("is_driver"):
@@ -405,6 +406,31 @@ async def _driver_monitor_loop():
             print("driver monitor loop error:", e)
         await asyncio.sleep(sleep_seconds)
 
+# --- driver timeout helpers --------------------------------
+async def get_driver_timeout_for_user(username: str) -> int:
+    db = await _read_db()
+    user = db.get(username)
+    if not user:
+        return DEFAULT_DRIVER_TIMEOUT
+    try:
+        v = int(user.get("driver_timeout_seconds", DEFAULT_DRIVER_TIMEOUT))
+        if v < 1:
+            return DEFAULT_DRIVER_TIMEOUT
+        return v
+    except Exception:
+        return DEFAULT_DRIVER_TIMEOUT
+
+
+async def set_driver_timeout_for_user(username: str, seconds: int) -> int:
+    if seconds < 1:
+        raise ValueError("timeout must be >= 1 second")
+    async with _db_lock:
+        db = await _read_db()
+        if username not in db:
+            raise KeyError("user not found")
+        db[username]["driver_timeout_seconds"] = int(seconds)
+        await _write_db(db)
+        return int(seconds)
 
 # ----- Pydantic Models -----
 class LoginRequest(BaseModel):
@@ -446,7 +472,8 @@ class DriverUpdate(BaseModel):
 
 class DeviceTokenIn(BaseModel):
     token: str
-
+class DriverTimeoutIn(BaseModel):
+    driver_timeout_seconds: int
 # ----- FastAPI app -----
 app = FastAPI(title="Auth + Camera API with Driver Monitor")
 app.add_middleware(
@@ -595,6 +622,22 @@ async def overlay(username: str = Query(...), cam_index: int = Query(...)):
 
     return StreamingResponse(gen, media_type="multipart/x-mixed-replace; boundary=frame")
 
+@app.get("/settings/driver_timeout")
+async def get_driver_timeout(user: dict = Depends(get_current_user)):
+    val = await get_driver_timeout_for_user(user["username"])
+    return {"driver_timeout_seconds": val}
+
+@app.post("/settings/driver_timeout")
+async def post_driver_timeout(payload: DriverTimeoutIn, user: dict = Depends(get_current_user)):
+    secs = int(payload.driver_timeout_seconds)
+    if secs < 1 or secs > 60 * 60 * 24:
+        raise HTTPException(status_code=400, detail = "driver_timeout_seconds out of range")
+    try:
+        updated = await set_driver_timeout_for_user(user["username"],secs)
+    except KeyError:
+        raise HTTPException(stats_code=404, detail = "User not found")
+    return {"driver_timeout_seconds": updated}
+
 @app.get("/")
 async def root():
     return {"message": "FastAPI server running."}
@@ -616,6 +659,7 @@ async def start_background_tasks():
                 "cameras": [],
                 "notifications": [],
                 "fcm_tokens": [],
+                "driver_timeout_seconds": DEFAULT_DRIVER_TIMEOUT,
             }
             db["nai"] = user
             await _write_db(db)

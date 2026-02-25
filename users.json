@@ -169,7 +169,8 @@
         "created_at": "2026-02-24T03:18:43.026038Z",
         "read": false
       }
-    ]
+    ],
+    "driver_timeout_seconds": 10
   },
   "dun": {
     "user_id": "4842d30d-ac2f-462c-bdeb-9f577936f825",
