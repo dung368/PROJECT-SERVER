@@ -18,13 +18,13 @@
     "num_cams": 1,
     "cameras": [
       {
-        "camera_id": "0f467d18-fb72-4857-b000-a1a4034974c0",
-        "name": "eee",
-        "url": "http://192.168.4.223:8888/nai-cam0/index.m3u8",
-        "created_at": "2026-02-24T03:16:02.509704Z",
+        "camera_id": "7c3c2397-94be-4b0a-acb0-bab84a3a668c",
+        "name": "ddx",
+        "url": "http://192.168.1.52:8888/nai-cam0/index.m3u8",
+        "created_at": "2026-02-25T07:45:50.349437Z",
         "is_driver": true,
-        "last_human_seen": "2026-02-24T03:18:05.169058Z",
-        "missing_notified": true
+        "last_human_seen": "2026-02-25T07:53:44.657733Z",
+        "missing_notified": false
       }
     ],
     "fcm_tokens": [

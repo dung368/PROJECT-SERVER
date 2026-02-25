@@ -167,6 +167,7 @@ async def delete_camera_by_id(username: str, camera_id: str) -> bool:
         db[username]["cameras"] = new_cams
         db[username]["num_cams"] = len(new_cams)
         await _write_db(db)
+        camera_worker.stop_worker(camera_id)
         return True
 
 # Synchronous helper used by camera_util to set last_human_seen safely from threads/processes
