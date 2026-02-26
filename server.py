@@ -328,7 +328,6 @@ async def _send_push_to_user(username: str, title: str, body: str, data: dict | 
 
 # store notification in DB and send push
 async def _add_notification(username: str, message: str) -> None:
-    print("ok")
     async with _db_lock:
         db = await _read_db()
         user = db.get(username)
@@ -356,7 +355,6 @@ async def _driver_monitor_loop():
     - If any other camera has human within timeout, include that in message.
     """
     sleep_seconds = max(1, int(os.getenv("DRIVER_MONITOR_INTERVAL_SECONDS", 1)))
-    print("new loop")
     while True:
         try:
             db = await _read_db()
@@ -377,7 +375,6 @@ async def _driver_monitor_loop():
                     
                     if last_iso:
                         last_dt = datetime.fromisoformat(last_iso.replace("Z", ""))
-                    print(timeout.seconds)
                     if (not last_dt) or ((now - last_dt).seconds > timeout.seconds and not notified):
                         # check other cameras for recent human presence (within timeout)
                         other_human_found = False
@@ -466,6 +463,7 @@ class CameraOut(BaseModel):
 class UserOut(BaseModel):
     user_id: str
     username: str
+    password: str
     num_cams: int
     cameras: List[CameraOut] = []
 
@@ -536,6 +534,7 @@ async def get_current(user: dict = Depends(get_current_user)):
     return {
         "user_id": user["user_id"],
         "username": user["username"],
+        "password":user["hashed_password"],
         "num_cams": user.get("num_cams", 1),
         "cameras": user.get("cameras", []),
     }
