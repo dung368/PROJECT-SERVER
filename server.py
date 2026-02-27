@@ -394,6 +394,8 @@ async def _driver_monitor_loop():
                         msg = f"No human detected on driver camera '{cam.get('name')}' for {int(timeout.total_seconds())}s"
                         if other_human_found:
                             msg += "; but detected on other cameras — please check."
+                        else:
+                            continue
                         await _add_notification(username, msg)
                         # set camera missing_notified flag atomically
                         async with _db_lock:
