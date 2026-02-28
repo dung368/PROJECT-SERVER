@@ -6,22 +6,32 @@
     "email": null,
     "hashed_password": "$2b$12$SVFCgRFoZjFdwI9fCBTCMORocLKB1ACR6iObP01gBMofzyFCv5QfC",
     "disabled": false,
-    "num_cams": 1,
+    "num_cams": 2,
     "cameras": [
       {
-        "camera_id": "0e5aadfb-5a13-42ff-bcf5-d16c5454edbf",
-        "name": "umi",
+        "camera_id": "70f5a473-4115-47ae-b5f1-b12073cdafa3",
+        "name": "cam1",
         "url": "http://192.168.2.221:8888/nai-cam0/index.m3u8",
-        "created_at": "2026-02-25T13:14:13.824804Z",
+        "created_at": "2026-02-27T14:44:20.378540Z",
         "is_driver": true,
-        "last_human_seen": "2026-02-25T14:03:40.263551Z",
+        "last_human_seen": null,
         "missing_notified": true
+      },
+      {
+        "camera_id": "3145c743-8213-481c-af9b-c77c6d8e231d",
+        "name": "new2",
+        "url": "http://192.168.2.220:8888/nai-cam0/index.m3u8",
+        "created_at": "2026-02-27T15:01:14.934048Z",
+        "is_driver": false,
+        "last_human_seen": "2026-02-27T15:27:30.194533Z",
+        "missing_notified": false
       }
     ],
     "fcm_tokens": [
       "c8r2qrweTQqfAZSgEkxlev:APA91bENLs7cXM3fyxwt5F-rtkwshfzuy5lSbcb37TZLU0RsS5D-Y6bY02DYrd8BbX3cwhFkEYBz9uJd1P0CgukWWvL22E0gAcgdsGkSSBzoyo2weS0utY4",
       "dxrBco4iS0qUviMJdiZ5jZ:APA91bHMX3Zi7hq-leUPez5Qs6aWpnK82VeJ2_FT12y5IhUys0H3HviJVV0JsG3e0CItRnjNqW1xoQq0K8uEpgdtcScZhOs_IntgrZwrRjKWGD7DuIDHIIg",
-      "eEOjYjyzRoKiKvB_VfCxW3:APA91bF6k-TqJ4yrJm2qqzWxa6a0dZA9axXn1SdK0QG4tYSDdsTfdtpx2udRJyr-ezYHykneR7l9p-rclmijz_tm7XE0FK1_cFidoqlOQBoLIAJ-N_e9y9Y"
+      "eEOjYjyzRoKiKvB_VfCxW3:APA91bF6k-TqJ4yrJm2qqzWxa6a0dZA9axXn1SdK0QG4tYSDdsTfdtpx2udRJyr-ezYHykneR7l9p-rclmijz_tm7XE0FK1_cFidoqlOQBoLIAJ-N_e9y9Y",
+      "eE-vZotzRxyYsHDrSJd6X0:APA91bFG2wzHtRlIV-EM11wCmtUeNcRgc6P2nzEF6oTgEp_dbKqNgC9WYdLEatkSmU91eHbtJqUqsQ1LGoJTPAYvkVwfohCQBy2wUwhhEijsObxYq-vot_0"
     ],
     "notifications": [
       {
@@ -2135,8 +2145,1532 @@
         "message": "No human detected on driver camera 'umi' for 3s",
         "created_at": "2026-02-25T14:03:44.991109Z",
         "read": false
+      },
+      {
+        "id": "b56bd67f-2e3f-4fad-b4f0-cab0fbbab6af",
+        "message": "No human detected on driver camera 'cam1' for 3s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:02:08.841042Z",
+        "read": false
+      },
+      {
+        "id": "35e66b9a-6665-4f10-b7a5-1ad841ab6a6a",
+        "message": "No human detected on driver camera 'cam1' for 3s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:02:09.959123Z",
+        "read": false
+      },
+      {
+        "id": "93046651-8eab-405e-83a8-8b92997fca48",
+        "message": "No human detected on driver camera 'cam1' for 3s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:02:14.059481Z",
+        "read": false
+      },
+      {
+        "id": "f9ac649e-ecd9-4876-bb74-f095fc029aca",
+        "message": "No human detected on driver camera 'cam1' for 3s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:02:15.109826Z",
+        "read": false
+      },
+      {
+        "id": "86c27426-b122-47f8-9e07-abfba1b2284b",
+        "message": "No human detected on driver camera 'cam1' for 3s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:02:16.158959Z",
+        "read": false
+      },
+      {
+        "id": "fdc2ba6a-3ef7-4e82-bde8-e0f83053c94c",
+        "message": "No human detected on driver camera 'cam1' for 3s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:02:19.225329Z",
+        "read": false
+      },
+      {
+        "id": "19a97edc-b970-4cc5-88af-82711e97a7cb",
+        "message": "No human detected on driver camera 'cam1' for 3s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:02:20.904841Z",
+        "read": false
+      },
+      {
+        "id": "3e60f448-2360-4d17-baba-15919e3b474a",
+        "message": "No human detected on driver camera 'cam1' for 3s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:02:25.997574Z",
+        "read": false
+      },
+      {
+        "id": "bfa1197e-5c52-4699-ab99-c8b00384df0c",
+        "message": "No human detected on driver camera 'cam1' for 3s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:02:27.056760Z",
+        "read": false
+      },
+      {
+        "id": "b13433c2-96a0-4a5b-a307-bb58e2049c0b",
+        "message": "No human detected on driver camera 'cam1' for 3s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:02:28.734419Z",
+        "read": false
+      },
+      {
+        "id": "3286acab-97a4-48d0-a53b-e7d66054c8f3",
+        "message": "No human detected on driver camera 'cam1' for 3s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:02:30.487432Z",
+        "read": false
+      },
+      {
+        "id": "50576f76-9cb5-4378-8e69-ca56c36c110b",
+        "message": "No human detected on driver camera 'cam1' for 3s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:02:31.547092Z",
+        "read": false
+      },
+      {
+        "id": "03a4be9a-eec8-47ee-9015-9e1b7928ec00",
+        "message": "No human detected on driver camera 'cam1' for 3s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:02:33.253160Z",
+        "read": false
+      },
+      {
+        "id": "0efea9db-0326-42e5-9d9f-4f8e939f930f",
+        "message": "No human detected on driver camera 'cam1' for 3s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:02:36.345149Z",
+        "read": false
+      },
+      {
+        "id": "9a329599-c2a0-498b-a32d-fa976669da43",
+        "message": "No human detected on driver camera 'cam1' for 3s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:02:38.036354Z",
+        "read": false
+      },
+      {
+        "id": "8b26a6ff-c718-46f5-8420-f1d809368a11",
+        "message": "No human detected on driver camera 'cam1' for 3s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:02:39.788679Z",
+        "read": false
+      },
+      {
+        "id": "4087d7f6-e243-4d13-8bc0-f592a89c7957",
+        "message": "No human detected on driver camera 'cam1' for 3s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:02:41.089456Z",
+        "read": false
+      },
+      {
+        "id": "b8928e3b-9e0d-4ef3-a9ac-d1f23d4fcc27",
+        "message": "No human detected on driver camera 'cam1' for 3s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:02:43.163121Z",
+        "read": false
+      },
+      {
+        "id": "0822d5d3-92f6-4f24-9804-fb0078ce8bfa",
+        "message": "No human detected on driver camera 'cam1' for 3s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:02:44.889934Z",
+        "read": false
+      },
+      {
+        "id": "750cd86a-42e9-4695-b3a3-8853633525dd",
+        "message": "No human detected on driver camera 'cam1' for 3s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:02:46.595880Z",
+        "read": false
+      },
+      {
+        "id": "ddf85b87-4791-4eb7-b1cb-bb8b9fd41f3a",
+        "message": "No human detected on driver camera 'cam1' for 3s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:02:47.647211Z",
+        "read": false
+      },
+      {
+        "id": "8b3c8615-dfc6-4daf-b351-0ad9a82a18ba",
+        "message": "No human detected on driver camera 'cam1' for 3s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:02:49.533918Z",
+        "read": false
+      },
+      {
+        "id": "8e8a9502-8eb2-4668-aa5d-d3b043447476",
+        "message": "No human detected on driver camera 'cam1' for 3s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:02:50.582361Z",
+        "read": false
+      },
+      {
+        "id": "92eb5915-c852-4821-a193-b38cbdb40bcd",
+        "message": "No human detected on driver camera 'cam1' for 3s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:02:52.308235Z",
+        "read": false
+      },
+      {
+        "id": "1d27dbb8-5840-4845-a484-7a6aaf0990e2",
+        "message": "No human detected on driver camera 'cam1' for 3s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:02:54.231892Z",
+        "read": false
+      },
+      {
+        "id": "08651e35-f201-45fa-b452-c2b5b3716d52",
+        "message": "No human detected on driver camera 'cam1' for 3s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:02:55.883628Z",
+        "read": false
+      },
+      {
+        "id": "bb91dc37-3bb1-4b6b-a7b0-2eaa908fafc2",
+        "message": "No human detected on driver camera 'cam1' for 3s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:02:57.127669Z",
+        "read": false
+      },
+      {
+        "id": "bebbc830-90a0-4e97-908c-7a7a215629ce",
+        "message": "No human detected on driver camera 'cam1' for 3s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:02:58.267232Z",
+        "read": false
+      },
+      {
+        "id": "1c8dcf9c-187c-439b-aabd-2054b7cdc780",
+        "message": "No human detected on driver camera 'cam1' for 3s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:02:59.398013Z",
+        "read": false
+      },
+      {
+        "id": "3876d5eb-6d8c-4ad5-a0a6-75bc48a0c6c6",
+        "message": "No human detected on driver camera 'cam1' for 3s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:03:00.506957Z",
+        "read": false
+      },
+      {
+        "id": "30c46489-e88a-4a1e-8680-52f78d18fc12",
+        "message": "No human detected on driver camera 'cam1' for 3s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:03:01.745246Z",
+        "read": false
+      },
+      {
+        "id": "eb00c989-889e-4ec8-82c1-f89dae1a2bde",
+        "message": "No human detected on driver camera 'cam1' for 3s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:03:02.917572Z",
+        "read": false
+      },
+      {
+        "id": "acbaa2d2-eb59-42f4-b9ee-df28daad0ef0",
+        "message": "No human detected on driver camera 'cam1' for 3s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:03:04.087829Z",
+        "read": false
+      },
+      {
+        "id": "f804cb04-69e9-413d-946b-30a3e97b837f",
+        "message": "No human detected on driver camera 'cam1' for 3s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:03:05.328582Z",
+        "read": false
+      },
+      {
+        "id": "494b4529-57fa-4a71-b063-ee6f11685f41",
+        "message": "No human detected on driver camera 'cam1' for 3s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:03:06.505549Z",
+        "read": false
+      },
+      {
+        "id": "4c63ab2f-4e2a-4a91-9de5-f33ba2e8b86a",
+        "message": "No human detected on driver camera 'cam1' for 3s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:03:07.717050Z",
+        "read": false
+      },
+      {
+        "id": "15164543-4031-43ce-8863-a0d912cd4a07",
+        "message": "No human detected on driver camera 'cam1' for 3s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:03:08.882799Z",
+        "read": false
+      },
+      {
+        "id": "1ecf005b-943a-4db3-9676-5016d10f1aa3",
+        "message": "No human detected on driver camera 'cam1' for 3s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:03:10.042360Z",
+        "read": false
+      },
+      {
+        "id": "24328885-2103-4f51-90df-17fd41c1184e",
+        "message": "No human detected on driver camera 'cam1' for 3s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:03:11.258656Z",
+        "read": false
+      },
+      {
+        "id": "b6e20b4c-e9c3-4f28-98f9-fabd5d4d6f78",
+        "message": "No human detected on driver camera 'cam1' for 3s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:03:12.420230Z",
+        "read": false
+      },
+      {
+        "id": "0c3458c7-3643-4400-a086-5946ab343c94",
+        "message": "No human detected on driver camera 'cam1' for 3s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:03:13.644982Z",
+        "read": false
+      },
+      {
+        "id": "2024458b-97a8-44a4-9a77-995c02173c9d",
+        "message": "No human detected on driver camera 'cam1' for 3s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:03:14.813553Z",
+        "read": false
+      },
+      {
+        "id": "1f93649f-6c1a-40a7-b110-85fe1c3752f2",
+        "message": "No human detected on driver camera 'cam1' for 3s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:03:16.005914Z",
+        "read": false
+      },
+      {
+        "id": "9c2ba5c1-a0e3-474d-b0ad-636ede29132e",
+        "message": "No human detected on driver camera 'cam1' for 3s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:03:17.170466Z",
+        "read": false
+      },
+      {
+        "id": "187acaf8-51f6-452b-abb5-32ff4749cc2d",
+        "message": "No human detected on driver camera 'cam1' for 3s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:03:18.314779Z",
+        "read": false
+      },
+      {
+        "id": "e66cdffd-e27e-4954-9d67-4763a132155d",
+        "message": "No human detected on driver camera 'cam1' for 3s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:03:19.475109Z",
+        "read": false
+      },
+      {
+        "id": "834bdd9e-1b39-478b-95d7-17fa2778dfea",
+        "message": "No human detected on driver camera 'cam1' for 3s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:03:20.649361Z",
+        "read": false
+      },
+      {
+        "id": "8b06a54c-3f0a-45ad-a984-168e0d57430a",
+        "message": "No human detected on driver camera 'cam1' for 3s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:03:21.798781Z",
+        "read": false
+      },
+      {
+        "id": "0174ea8e-591b-4ebf-89fb-97e1163450b6",
+        "message": "No human detected on driver camera 'cam1' for 3s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:03:22.964638Z",
+        "read": false
+      },
+      {
+        "id": "eda363cc-e2f1-465a-966d-de6f6072f4d2",
+        "message": "No human detected on driver camera 'cam1' for 3s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:03:24.101108Z",
+        "read": false
+      },
+      {
+        "id": "4b05b98e-2e2c-4d05-8961-79675689863b",
+        "message": "No human detected on driver camera 'cam1' for 3s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:03:25.326521Z",
+        "read": false
+      },
+      {
+        "id": "fe3b8ee6-30be-4c59-9598-130fc6eb804a",
+        "message": "No human detected on driver camera 'cam1' for 3s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:03:26.558529Z",
+        "read": false
+      },
+      {
+        "id": "bd7c1e61-2e2c-4d94-8b38-853f97a419d5",
+        "message": "No human detected on driver camera 'cam1' for 3s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:03:27.776323Z",
+        "read": false
+      },
+      {
+        "id": "63239f9f-dd33-46d4-a5fc-9b22ec9a3779",
+        "message": "No human detected on driver camera 'cam1' for 3s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:03:28.915890Z",
+        "read": false
+      },
+      {
+        "id": "c8d643b6-d87d-4be5-99db-df60bc1bac50",
+        "message": "No human detected on driver camera 'cam1' for 3s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:03:30.074243Z",
+        "read": false
+      },
+      {
+        "id": "2774df74-f501-4dfc-875c-2a6ade2381c0",
+        "message": "No human detected on driver camera 'cam1' for 3s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:03:31.293309Z",
+        "read": false
+      },
+      {
+        "id": "0a825f36-d65b-4b47-9c5d-ee89e9bdc3b2",
+        "message": "No human detected on driver camera 'cam1' for 3s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:03:32.467302Z",
+        "read": false
+      },
+      {
+        "id": "c0486b90-80b1-4ae7-9b8b-2093fe2e0364",
+        "message": "No human detected on driver camera 'cam1' for 3s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:03:33.565925Z",
+        "read": false
+      },
+      {
+        "id": "b17ddd66-c214-4e95-b4e1-61de73beb64e",
+        "message": "No human detected on driver camera 'cam1' for 3s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:03:34.651415Z",
+        "read": false
+      },
+      {
+        "id": "e91970f3-4358-44e2-a623-45b26a10ec6c",
+        "message": "No human detected on driver camera 'cam1' for 3s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:03:37.829478Z",
+        "read": false
+      },
+      {
+        "id": "0044bc73-13ac-4585-8a48-3c259a84fbfa",
+        "message": "No human detected on driver camera 'cam1' for 3s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:03:38.919190Z",
+        "read": false
+      },
+      {
+        "id": "49797d3a-932f-4095-a4f0-991ff58531a3",
+        "message": "No human detected on driver camera 'cam1' for 3s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:03:42.095202Z",
+        "read": false
+      },
+      {
+        "id": "f289d078-d5ab-4873-b37b-f7f04f573c80",
+        "message": "No human detected on driver camera 'cam1' for 3s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:03:43.238300Z",
+        "read": false
+      },
+      {
+        "id": "4bfbe458-7008-4916-9cef-b2aed704b695",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:03:47.396278Z",
+        "read": false
+      },
+      {
+        "id": "cbe36105-5a0e-4c6c-95a7-847ff4b61a29",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:03:49.641720Z",
+        "read": false
+      },
+      {
+        "id": "61406179-39f9-4332-b90b-8c5778dc694e",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:03:50.879005Z",
+        "read": false
+      },
+      {
+        "id": "8d2dc88e-e0f9-4efd-a42d-2f317685d6c1",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:03:52.040476Z",
+        "read": false
+      },
+      {
+        "id": "99d4e329-8416-4735-bc70-d712dc6c4046",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:03:53.239466Z",
+        "read": false
+      },
+      {
+        "id": "0fe458db-50af-4951-b6cd-9fb5ca8b1674",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:03:54.341477Z",
+        "read": false
+      },
+      {
+        "id": "5ca63714-dc48-4ea5-a9b4-2ce57a71973a",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:03:55.574447Z",
+        "read": false
+      },
+      {
+        "id": "9dd4a566-227e-435b-993b-94409500c2a4",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:03:56.742919Z",
+        "read": false
+      },
+      {
+        "id": "d6b72a7e-6aad-481c-a59e-8433506a02b2",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:03:57.920444Z",
+        "read": false
+      },
+      {
+        "id": "71272fce-b463-4131-8799-53b509ba9050",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:03:59.152705Z",
+        "read": false
+      },
+      {
+        "id": "885449ed-553f-4cde-a424-bdb31d896b9c",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:04:00.253162Z",
+        "read": false
+      },
+      {
+        "id": "22d6de0b-895e-42d9-954e-de7a65c6cde3",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:04:01.427800Z",
+        "read": false
+      },
+      {
+        "id": "5d11414e-e734-472a-8e6a-766dda817244",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:04:02.590122Z",
+        "read": false
+      },
+      {
+        "id": "0cf9b7a3-784c-400b-b541-f895f5dbef80",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:04:03.730875Z",
+        "read": false
+      },
+      {
+        "id": "a12d701d-f208-43cd-8ec4-30fb21f3069a",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:04:04.915379Z",
+        "read": false
+      },
+      {
+        "id": "8c58a6f5-daea-41af-be62-241433bc176a",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:04:06.120819Z",
+        "read": false
+      },
+      {
+        "id": "d608e311-5c9b-449a-ab78-b8c5cc9b2f2f",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:04:07.262411Z",
+        "read": false
+      },
+      {
+        "id": "5dac5c26-8829-4382-8864-901425cd4116",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:04:08.450123Z",
+        "read": false
+      },
+      {
+        "id": "805640cc-ad44-48e9-bb75-fdf1f2ce8cca",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:04:09.571314Z",
+        "read": false
+      },
+      {
+        "id": "b5cbf1cb-92df-49f5-8449-1a4ca5b6ea97",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:04:10.741819Z",
+        "read": false
+      },
+      {
+        "id": "02ca157d-0ed6-4537-af6a-59b9c69b8081",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:04:11.917084Z",
+        "read": false
+      },
+      {
+        "id": "83d0dd51-8d42-4159-a882-2f0afa8c189a",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:04:13.112411Z",
+        "read": false
+      },
+      {
+        "id": "1283281c-115f-41ae-b531-c7dd7b91c3f4",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:04:14.235333Z",
+        "read": false
+      },
+      {
+        "id": "934c8e05-970d-4182-9ac7-f09540809dc2",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:04:15.385586Z",
+        "read": false
+      },
+      {
+        "id": "2c5ceead-ef0d-479d-926a-a929cea39271",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:04:16.585845Z",
+        "read": false
+      },
+      {
+        "id": "03f3f887-8ff7-4254-967c-e1c0ada407d0",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:04:17.773540Z",
+        "read": false
+      },
+      {
+        "id": "260419ac-30b9-4bb2-98f8-3ce5a7ac18ff",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:04:23.033482Z",
+        "read": false
+      },
+      {
+        "id": "6581bdb6-745d-40c5-b050-754821b57f6a",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:04:47.353968Z",
+        "read": false
+      },
+      {
+        "id": "8a60d3f7-f2f7-4718-a029-bce778a6e115",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:04:52.458849Z",
+        "read": false
+      },
+      {
+        "id": "710f4d13-c7c0-4f21-8e59-5bfd05964ffb",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:10:04.601198Z",
+        "read": false
+      },
+      {
+        "id": "bc86f0ae-6226-4a95-9010-178ed2f5ee62",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:10:05.982901Z",
+        "read": false
+      },
+      {
+        "id": "e3882874-bcb3-46d9-bd31-9fb2b67c04c7",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:10:07.466570Z",
+        "read": false
+      },
+      {
+        "id": "2ab74041-d211-49e0-8a10-8f9f170c3ed8",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:10:08.968233Z",
+        "read": false
+      },
+      {
+        "id": "f2b33c14-5500-47dd-88b6-a608b446ba3c",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:10:10.388613Z",
+        "read": false
+      },
+      {
+        "id": "eb1e1c00-174e-4ef9-8329-641c3de0cdf3",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:10:11.841446Z",
+        "read": false
+      },
+      {
+        "id": "ebb17511-5c71-4676-bea4-d8965ac483f0",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:10:13.228842Z",
+        "read": false
+      },
+      {
+        "id": "75e4685c-96e5-4da8-ad3c-2c7a56b7994c",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:10:14.636660Z",
+        "read": false
+      },
+      {
+        "id": "e38b49bb-f523-4390-a885-d48699b8ccd3",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:10:17.031344Z",
+        "read": false
+      },
+      {
+        "id": "1b6f15e7-2e4f-4f73-8f8d-4e8fbedc5d13",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:10:18.482813Z",
+        "read": false
+      },
+      {
+        "id": "247d2480-79e7-49b5-8203-d1cbba6e386c",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:10:19.921866Z",
+        "read": false
+      },
+      {
+        "id": "921ba8e0-ca81-4364-94e3-d2ab46d0dd81",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:10:21.348939Z",
+        "read": false
+      },
+      {
+        "id": "ede1e116-ed79-47c6-97bc-abe3ad17136e",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:10:22.742547Z",
+        "read": false
+      },
+      {
+        "id": "944a0d88-1c9f-45d7-aa2d-e1c0834a6b1e",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:10:24.197293Z",
+        "read": false
+      },
+      {
+        "id": "b2135c2c-db08-410e-be3d-cbacd2176aa6",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:10:25.611354Z",
+        "read": false
+      },
+      {
+        "id": "651e6a91-2240-47d8-9d85-021b3dbaf1d5",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:10:26.957421Z",
+        "read": false
+      },
+      {
+        "id": "7af189e7-54e0-47b1-80c0-b08628bfdf49",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:10:28.444642Z",
+        "read": false
+      },
+      {
+        "id": "00d5e414-0e7b-443a-b14c-cb088d283872",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:10:29.949308Z",
+        "read": false
+      },
+      {
+        "id": "f7cad4ae-892c-4996-acd6-8a84f172d1c4",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:10:31.373677Z",
+        "read": false
+      },
+      {
+        "id": "e4953a28-c33a-4d3b-be2a-38479059c743",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:10:32.797175Z",
+        "read": false
+      },
+      {
+        "id": "26daa00d-103e-43f6-a5a6-b83abc210ae1",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:10:34.254824Z",
+        "read": false
+      },
+      {
+        "id": "a36075fe-c0f8-475d-b776-146eb2d23929",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:10:39.611709Z",
+        "read": false
+      },
+      {
+        "id": "96859a04-d7db-48cb-b948-cd47cb677b4b",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:10:45.097830Z",
+        "read": false
+      },
+      {
+        "id": "d7192d18-c938-45f7-8606-28fefd1dce9e",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:11:04.685983Z",
+        "read": false
+      },
+      {
+        "id": "3baacbf8-5bff-4909-bd65-30377c0ef8fc",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:11:07.810296Z",
+        "read": false
+      },
+      {
+        "id": "56bafdda-7195-405d-b100-fb079917239b",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:11:09.202258Z",
+        "read": false
+      },
+      {
+        "id": "f36fae2e-d52d-41d6-9ffa-96c009b38040",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:11:10.629572Z",
+        "read": false
+      },
+      {
+        "id": "a0911483-6bf9-4cb5-ac8f-630445d4767d",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:11:12.024024Z",
+        "read": false
+      },
+      {
+        "id": "996d35bb-8a42-4df8-9af2-d7883e3f7b8f",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:11:13.396764Z",
+        "read": false
+      },
+      {
+        "id": "3f4c93fc-a7e1-47f6-ad0a-d25a19b3a7c5",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:11:15.787422Z",
+        "read": false
+      },
+      {
+        "id": "a29e59c1-c902-4859-9ba1-e23fe310f44d",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:11:17.215011Z",
+        "read": false
+      },
+      {
+        "id": "4eaaa8cf-70a1-40db-b67e-5723de37cc54",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:11:19.654355Z",
+        "read": false
+      },
+      {
+        "id": "e9ef00c4-b91a-4efc-9b47-6f426a31a680",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:11:22.177086Z",
+        "read": false
+      },
+      {
+        "id": "89317e24-6e77-4aad-9ce2-60b80a2a3616",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:11:23.629323Z",
+        "read": false
+      },
+      {
+        "id": "49308856-d2ec-4963-b906-c59093adc088",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:11:27.158585Z",
+        "read": false
+      },
+      {
+        "id": "0554c6ec-2d00-4dc0-aac6-32c747d7030a",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:11:30.640358Z",
+        "read": false
+      },
+      {
+        "id": "215dccdd-b8af-4c5f-a584-8528bc5a9200",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:11:34.128897Z",
+        "read": false
+      },
+      {
+        "id": "04166eb8-fb9f-440b-baac-24cadee93f18",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:11:35.654061Z",
+        "read": false
+      },
+      {
+        "id": "63503adc-abf9-4ece-9305-03416fd3ccfc",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:11:37.413043Z",
+        "read": false
+      },
+      {
+        "id": "0090e11a-1823-4c98-8ac8-9a06ad4c84c5",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:11:38.898575Z",
+        "read": false
+      },
+      {
+        "id": "733f540b-4a51-4cdd-813e-0522fe6e9507",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:11:40.442240Z",
+        "read": false
+      },
+      {
+        "id": "540641ff-4d2c-4736-8046-2a39c945f8cd",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:16:44.368092Z",
+        "read": false
+      },
+      {
+        "id": "94c6f8dc-173c-41c0-9344-072dea01b0fc",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:16:46.089046Z",
+        "read": false
+      },
+      {
+        "id": "ac500762-2180-45fc-9ade-14a0c2b78df2",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:16:47.745579Z",
+        "read": false
+      },
+      {
+        "id": "4a369873-57ee-4def-944f-48b4eb96bd00",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:16:49.278048Z",
+        "read": false
+      },
+      {
+        "id": "0799c6b6-a566-4623-a81d-3142c5db95db",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:16:50.879916Z",
+        "read": false
+      },
+      {
+        "id": "cdd1e759-53c7-490e-a001-5a5c25033f29",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:16:52.475635Z",
+        "read": false
+      },
+      {
+        "id": "54ca06ab-e3a4-4bb7-aa27-f002af810771",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:16:55.117088Z",
+        "read": false
+      },
+      {
+        "id": "fc3bfa2f-f5fc-4ab3-bd8f-4cafa68201e2",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:16:56.803349Z",
+        "read": false
+      },
+      {
+        "id": "bdda5154-49fa-4ba8-a17f-8e6d8549b3e4",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:17:01.396907Z",
+        "read": false
+      },
+      {
+        "id": "7e0668d8-e688-47ef-853e-b984aa748319",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:17:04.020578Z",
+        "read": false
+      },
+      {
+        "id": "bc123afa-0680-4f88-930f-c57fc354b77e",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:17:37.217749Z",
+        "read": false
+      },
+      {
+        "id": "7f8b9d82-efbe-4fee-8aa1-4d2e594e39f4",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:17:42.684012Z",
+        "read": false
+      },
+      {
+        "id": "89383433-ab5b-4980-b84f-55f9a80c2db9",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:17:43.756678Z",
+        "read": false
+      },
+      {
+        "id": "9459bb51-f278-4e5a-a302-03b4a2ea8faa",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:17:47.284970Z",
+        "read": false
+      },
+      {
+        "id": "5e899c74-c1b1-432f-aeec-691e2db439ca",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:17:48.350833Z",
+        "read": false
+      },
+      {
+        "id": "6e566cdc-7029-4df0-850b-ec9fff70287d",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:17:51.570235Z",
+        "read": false
+      },
+      {
+        "id": "cc2b196b-e9ae-4847-97f6-c0258cd513c2",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:17:52.638270Z",
+        "read": false
+      },
+      {
+        "id": "b24cebed-da36-4355-9bdc-77b5223956db",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:17:55.950998Z",
+        "read": false
+      },
+      {
+        "id": "fb7b91d3-70fc-4615-8657-f321e0b63f00",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:18:02.130018Z",
+        "read": false
+      },
+      {
+        "id": "d16b2cab-3d56-4cbc-9590-710ad990ffac",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:18:08.279788Z",
+        "read": false
+      },
+      {
+        "id": "cfbc8721-9b49-41cf-93fd-c8adaaf1accc",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:18:14.428773Z",
+        "read": false
+      },
+      {
+        "id": "a7151f3c-ca97-4a3b-84d2-f1579faafbbd",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:18:15.514447Z",
+        "read": false
+      },
+      {
+        "id": "a5825a27-f1b0-4498-b2a4-689278330ce1",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:18:18.736606Z",
+        "read": false
+      },
+      {
+        "id": "c97c20e0-c6c0-45ba-a205-b2172623e4e8",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:18:19.795455Z",
+        "read": false
+      },
+      {
+        "id": "7a4dba4d-7c71-4d04-b2c8-15f9519680f2",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:18:22.060782Z",
+        "read": false
+      },
+      {
+        "id": "714afa87-6ad5-4521-a345-98cf04bcc8ca",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:18:23.129377Z",
+        "read": false
+      },
+      {
+        "id": "973a935c-8f04-4552-9a60-e11bf48d177b",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:18:29.997547Z",
+        "read": false
+      },
+      {
+        "id": "dbe5c5c2-97c2-4241-a79e-a0264d676b01",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:18:40.157266Z",
+        "read": false
+      },
+      {
+        "id": "8f3e7fda-bef6-48b8-957d-ec0a9172dc59",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:18:45.314351Z",
+        "read": false
+      },
+      {
+        "id": "5155891b-ee11-4f8e-9e20-dad34487bb36",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:18:50.439759Z",
+        "read": false
+      },
+      {
+        "id": "d198c9fc-469f-453a-bcdc-cc8404cea11e",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:21:24.494311Z",
+        "read": false
+      },
+      {
+        "id": "f99eda33-918e-440d-b29d-d119bc452a0f",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:21:25.656519Z",
+        "read": false
+      },
+      {
+        "id": "6dbe6264-6b9d-4aa3-a42b-2980bbe69f1d",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:21:27.875460Z",
+        "read": false
+      },
+      {
+        "id": "bb49ae8a-1beb-42bc-a92a-c565b8d593bd",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:21:28.932527Z",
+        "read": false
+      },
+      {
+        "id": "89bef479-364f-403d-8154-dc83e93929f0",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:21:31.013305Z",
+        "read": false
+      },
+      {
+        "id": "7f9f9446-b9da-4311-8c1f-ed45418a6775",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:21:35.129339Z",
+        "read": false
+      },
+      {
+        "id": "742beeb1-bf78-441d-977c-df4dbfa288e3",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:21:40.328938Z",
+        "read": false
+      },
+      {
+        "id": "be5ed358-f6b4-4240-90a6-303dcab54f72",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:21:49.577933Z",
+        "read": false
+      },
+      {
+        "id": "ccf502db-0a97-4c27-9953-84f8cadd37ed",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:21:54.069993Z",
+        "read": false
+      },
+      {
+        "id": "aa8087f0-881a-41c2-923e-ee9cd918c6e2",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:21:55.156591Z",
+        "read": false
+      },
+      {
+        "id": "937b20d5-c4b4-44ae-8bd8-b5fa7e1c3935",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:21:57.621066Z",
+        "read": false
+      },
+      {
+        "id": "802728d4-ad3c-4823-8b83-51446f532c5e",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:21:58.686545Z",
+        "read": false
+      },
+      {
+        "id": "1d9f0de0-3397-4ad2-8748-3733384853b3",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:22:01.892649Z",
+        "read": false
+      },
+      {
+        "id": "d493889b-271a-4306-8ff7-5239ba659bc7",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:22:02.950654Z",
+        "read": false
+      },
+      {
+        "id": "45e5ecc4-36dd-440e-bb05-efa1e8df5441",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:22:06.085337Z",
+        "read": false
+      },
+      {
+        "id": "5bcac116-ebf0-4bea-bfd1-bf3dcc62824f",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:22:07.152532Z",
+        "read": false
+      },
+      {
+        "id": "73ba0cb8-c1af-42b0-a2c4-7697fee7e945",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:22:11.351211Z",
+        "read": false
+      },
+      {
+        "id": "79cab33a-641d-4282-ae57-44c839d50a64",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:22:12.406310Z",
+        "read": false
+      },
+      {
+        "id": "71a605c1-3a11-4d26-935e-022c140d7d6e",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:22:16.661377Z",
+        "read": false
+      },
+      {
+        "id": "bd2bbfbe-8d08-4087-bb1b-6bb7202b2462",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:22:17.717287Z",
+        "read": false
+      },
+      {
+        "id": "154f7308-c28b-42fb-bd30-f8ce1a0e7b0b",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:22:20.872057Z",
+        "read": false
+      },
+      {
+        "id": "82deeb7c-261a-42a6-b209-957a36b3ebee",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:22:21.937877Z",
+        "read": false
+      },
+      {
+        "id": "2fffdc23-4d32-494c-8425-8dc6117a0e06",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:22:24.473586Z",
+        "read": false
+      },
+      {
+        "id": "a3588030-e959-4a6f-9ec0-638d5e00627b",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:22:27.620639Z",
+        "read": false
+      },
+      {
+        "id": "0aa6ab3c-1fcf-4a26-8a11-c2c01a79f050",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:22:37.244116Z",
+        "read": false
+      },
+      {
+        "id": "5510d9d7-571b-4233-a195-a2316e92be38",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:22:48.436216Z",
+        "read": false
+      },
+      {
+        "id": "fa82ef11-5241-4180-b47b-670c96e60db1",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:22:53.556651Z",
+        "read": false
+      },
+      {
+        "id": "127e9ed9-efec-4400-a085-2a5aa1d1be26",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:22:58.736740Z",
+        "read": false
+      },
+      {
+        "id": "7f03bbf9-a9b9-4bac-b0e9-34b7dc6ac123",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:23:03.871322Z",
+        "read": false
+      },
+      {
+        "id": "276e0764-7669-4ffe-9f95-5038b539fbbd",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:23:07.986312Z",
+        "read": false
+      },
+      {
+        "id": "b92aa9ef-5192-4b25-9ca2-70f49ad8e7d5",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:23:13.112044Z",
+        "read": false
+      },
+      {
+        "id": "c36c398b-410d-4830-b93f-dc53a568cd7a",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:23:18.258805Z",
+        "read": false
+      },
+      {
+        "id": "ebc13751-774f-4ca3-a817-4f2ab42f58aa",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:23:23.379056Z",
+        "read": false
+      },
+      {
+        "id": "28078dc9-f3ef-4311-8444-f223edb995ad",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:23:28.580529Z",
+        "read": false
+      },
+      {
+        "id": "7fab2659-e29f-4b7f-9ca5-8203c03aa83c",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:23:33.712262Z",
+        "read": false
+      },
+      {
+        "id": "7349f5eb-1360-4b7b-8c9d-11c72c4531e5",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:23:38.839130Z",
+        "read": false
+      },
+      {
+        "id": "f1c3696e-ee3d-4dbe-991a-baa8be9a512b",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:23:44.180253Z",
+        "read": false
+      },
+      {
+        "id": "b5b16575-91a3-4886-b4ab-9e24f40fd976",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:23:49.326397Z",
+        "read": false
+      },
+      {
+        "id": "3b594d2f-5833-40e2-a391-4c27d22583c8",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:23:54.467856Z",
+        "read": false
+      },
+      {
+        "id": "3f994da8-09f0-4e41-920c-807447d1e22e",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:23:58.598038Z",
+        "read": false
+      },
+      {
+        "id": "320017d0-fdeb-4195-92c4-bf8a91a39e71",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:24:03.940732Z",
+        "read": false
+      },
+      {
+        "id": "9dee1f6d-0119-4e13-845a-f0aa8ce4fdb1",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:24:09.053475Z",
+        "read": false
+      },
+      {
+        "id": "7addbaf3-c1c3-4cdf-9473-ed6cb90c7d46",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:24:21.256505Z",
+        "read": false
+      },
+      {
+        "id": "ece74366-b0ba-4c86-804c-bede20f42d9b",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:24:26.401748Z",
+        "read": false
+      },
+      {
+        "id": "24d414ca-b6f5-4ec0-95db-4fe87d0e4d96",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:24:31.517428Z",
+        "read": false
+      },
+      {
+        "id": "557a063a-26b1-471e-a9ff-37c3b442faed",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:24:36.660788Z",
+        "read": false
+      },
+      {
+        "id": "8e4112e7-4e77-47a8-b64a-65f389edd7d0",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:24:37.741036Z",
+        "read": false
+      },
+      {
+        "id": "48c096f2-865d-4735-908e-2fa780c4b836",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:24:41.895759Z",
+        "read": false
+      },
+      {
+        "id": "00b40435-fcb0-4bb8-9ae3-d54a677806d1",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:24:42.954562Z",
+        "read": false
+      },
+      {
+        "id": "6c994a2d-1745-44a9-b5b4-c731d15cc81b",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:24:45.098418Z",
+        "read": false
+      },
+      {
+        "id": "682df80b-2da8-420c-919f-e008904b29d8",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:24:46.395505Z",
+        "read": false
+      },
+      {
+        "id": "5417d21c-9488-4ad2-980d-89e3c0f9d8f3",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:24:47.455642Z",
+        "read": false
+      },
+      {
+        "id": "3278bdc9-04a9-4c7c-9490-a07d1cede3f3",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:24:50.658783Z",
+        "read": false
+      },
+      {
+        "id": "e04d7e7a-b87a-4de6-90ee-6faa63d9c098",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:24:52.885818Z",
+        "read": false
+      },
+      {
+        "id": "2508736a-df40-43ee-b093-a8985592dd48",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:24:54.237872Z",
+        "read": false
+      },
+      {
+        "id": "a418f6b3-718e-4179-9b4f-e1d06cd1c519",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:24:55.978498Z",
+        "read": false
+      },
+      {
+        "id": "ef38ad00-a1e1-4757-88cb-b13e8790ccaf",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:24:59.203836Z",
+        "read": false
+      },
+      {
+        "id": "e6e0e35b-caf2-4db7-a9a1-0d9ed8f473ce",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:25:00.262997Z",
+        "read": false
+      },
+      {
+        "id": "7aac0900-f45c-4c0e-b4db-ead5b3e16e8e",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:25:03.436605Z",
+        "read": false
+      },
+      {
+        "id": "d5d8f34f-d45e-49d2-824e-c03b349d3dd8",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:25:08.575184Z",
+        "read": false
+      },
+      {
+        "id": "e4b1a59e-cf34-41cf-88a8-381532ec8cb4",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:25:09.639793Z",
+        "read": false
+      },
+      {
+        "id": "27e51de4-daaa-433d-b09a-155c01c747c8",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:25:13.004665Z",
+        "read": false
+      },
+      {
+        "id": "d075f970-27ee-4d03-b9ea-5bf15e94e181",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:25:14.084418Z",
+        "read": false
+      },
+      {
+        "id": "4ec589aa-00c3-46b5-9e5f-b5a72883eac1",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:25:17.350636Z",
+        "read": false
+      },
+      {
+        "id": "f709d382-73ce-4043-88e9-0a00733a27ac",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:25:18.418374Z",
+        "read": false
+      },
+      {
+        "id": "643f5ce6-8c44-48cb-9619-d74184a976e4",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:25:20.588047Z",
+        "read": false
+      },
+      {
+        "id": "c06d6caf-c103-40fe-80bc-33396625cd1c",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:25:21.648205Z",
+        "read": false
+      },
+      {
+        "id": "2eae67d5-7488-4d96-97b4-5d3547209e7d",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:25:23.838701Z",
+        "read": false
+      },
+      {
+        "id": "39583822-c9b7-4551-a6c7-505dd0b2d948",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:25:24.907060Z",
+        "read": false
+      },
+      {
+        "id": "726497e6-8a09-4a76-9f34-f33274398f4d",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:25:28.017726Z",
+        "read": false
+      },
+      {
+        "id": "2fbe24ce-cb3a-43a2-9cf9-0a6017b62b1e",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:25:29.082951Z",
+        "read": false
+      },
+      {
+        "id": "c70d825f-ebe6-4366-adc7-f34dac9fd260",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:25:32.212205Z",
+        "read": false
+      },
+      {
+        "id": "1859e579-7f01-4e82-9dfd-85b5a8c2fb52",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:25:33.278412Z",
+        "read": false
+      },
+      {
+        "id": "ea7fc269-ad04-4517-994c-ba447f4bebf0",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:25:34.520748Z",
+        "read": false
+      },
+      {
+        "id": "921f6f30-d8b9-40ea-9d19-5c2b8a8291d6",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:25:38.894853Z",
+        "read": false
+      },
+      {
+        "id": "35173bef-750d-4637-83d6-0804c50c4dec",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:25:44.010155Z",
+        "read": false
+      },
+      {
+        "id": "e83568e6-dd6a-4fb7-bbaf-7c266c7f80b4",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:25:52.171708Z",
+        "read": false
+      },
+      {
+        "id": "f99b11ab-3595-458c-93e2-b35bb6fad96f",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:25:59.723690Z",
+        "read": false
+      },
+      {
+        "id": "5743c42b-625c-4b38-95c8-3dba35f369d0",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:26:02.254919Z",
+        "read": false
+      },
+      {
+        "id": "0f34bb15-46ab-4fff-b71e-f18232ac2de4",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:26:04.824213Z",
+        "read": false
+      },
+      {
+        "id": "d2d7396e-d2b0-4ae3-8b69-8d4697188a03",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:26:09.331647Z",
+        "read": false
+      },
+      {
+        "id": "0831475b-f783-42de-b6d0-2d36729872ce",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:26:14.974344Z",
+        "read": false
+      },
+      {
+        "id": "08bec599-603c-4af0-83a7-7d32bf89aa8f",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:26:19.481804Z",
+        "read": false
+      },
+      {
+        "id": "e8a2df18-f254-4c0d-b99c-9ee799c2154b",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:26:25.010509Z",
+        "read": false
+      },
+      {
+        "id": "1d110d3e-65fa-4f43-966e-5f759f9cf401",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:26:29.537255Z",
+        "read": false
+      },
+      {
+        "id": "f02b8af2-14dc-4c9e-a6fa-dac1c8bc4a61",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:26:35.226327Z",
+        "read": false
+      },
+      {
+        "id": "9e69875e-39ce-4123-aa1c-0eb3a21c5e3c",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:26:39.798201Z",
+        "read": false
+      },
+      {
+        "id": "f4804a57-d4c0-48e8-9aa5-137b3a0b4a53",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:26:45.311675Z",
+        "read": false
+      },
+      {
+        "id": "ed52cc6b-6762-417f-858e-f60b458cbef4",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:26:49.897678Z",
+        "read": false
+      },
+      {
+        "id": "67f70ea2-5b29-4e89-a1cb-c9063f9e59e8",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:27:24.722681Z",
+        "read": false
+      },
+      {
+        "id": "69a5d0ce-3cda-43c0-ba62-5aaedbff008d",
+        "message": "No human detected on driver camera 'cam1' for 1s; but detected on other cameras — please check.",
+        "created_at": "2026-02-27T15:27:31.045404Z",
+        "read": false
       }
     ],
-    "driver_timeout_seconds": 3
+    "driver_timeout_seconds": 1
   }
 }
